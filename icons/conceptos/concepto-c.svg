@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto C: "filtro": entra humo, sale un punto nitido
+       paleta: base #1f2430 | humo #8a93a0 | embudo #f3efe7 | punto #f4b740 -->
+  <rect id="base" x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <path id="voluta" d="M64 46 C 54 40, 74 34, 64 26" fill="none" stroke="#8a93a0" stroke-width="9" stroke-linecap="round"/>
+  <path id="embudo" d="M30 54 H 98 L 72 78 V 84 H 56 V 78 Z" fill="#f3efe7" stroke="#f3efe7" stroke-width="4" stroke-linejoin="round"/>
+  <circle id="punto" cx="64" cy="98" r="6.5" fill="#f4b740"/>
+</svg>

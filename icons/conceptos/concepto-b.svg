@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto B: "el post que se aclara": globo de conversacion,
+       arriba una linea de humo (ondulada), abajo una linea clara (recta)
+       paleta: globo #1f2430 | humo #8a93a0 | linea clara #f4b740 -->
+  <path id="globo" d="M40 18 H 88 A 22 22 0 0 1 110 40 V 72 A 22 22 0 0 1 88 94 H 58 L 40 108 L 41 93 A 22 22 0 0 1 18 72 V 40 A 22 22 0 0 1 40 18 Z" fill="#1f2430"/>
+  <path id="linea-humo" d="M38 46 C 46 34, 55 34, 64 46 S 82 58, 90 46" fill="none" stroke="#8a93a0" stroke-width="11" stroke-linecap="round"/>
+  <path id="linea-clara" d="M40 70 H 88" fill="none" stroke="#f4b740" stroke-width="12" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto A: "la voluta se asienta": una voluta de humo (que tambien es la S
+       de sinhumo) baja y termina en una linea limpia
+       paleta: base #1f2430 | humo #8a93a0 | linea #f4b740 -->
+  <rect id="base" x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <path id="voluta" d="M70 32 C 56 28, 42 36, 48 46 C 54 55, 70 56, 66 68 C 63 77, 52 81, 46 82" fill="none" stroke="#8a93a0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="linea-clara" d="M46 82 H 88" fill="none" stroke="#f4b740" stroke-width="12" stroke-linecap="round"/>
+</svg>
