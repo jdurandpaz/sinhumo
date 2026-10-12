@@ -1,0 +1,14 @@
+[
+  {
+    "id": "cargos.en.new-position",
+    "pattern": "\\bi'?m (happy|excited|thrilled|pleased) to share that i'?m starting a new position",
+    "weight": 3,
+    "description": "Plantilla de LinkedIn: \"I'm happy to share that I'm starting a new position\""
+  },
+  {
+    "id": "cargos.en.joined",
+    "pattern": "\\bi'?ve (officially )?joined .{2,40} as (a|an|the)? ?",
+    "weight": 3,
+    "description": "\"I've joined X as...\""
+  }
+]

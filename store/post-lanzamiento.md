@@ -12,7 +12,7 @@ Qué filtra:
 - Autobombo, cebo de interacción ("comenta SÍ y te lo envío") y anuncios.
 - Política, si la activas. Viene apagado.
 
-Lo probé con mi feed: de 13 posts, 5 eran anuncios y 1 era una historia de superación de manual.
+Lo calibré con 111 posts de mi feed: 28 eran anuncios. Con los filtros por defecto no filtró ningún post que aportara.
 
 Dos decisiones que tomé a propósito:
 
@@ -28,6 +28,6 @@ Repo: https://github.com/jdurandpaz/sinhumo
 ```
 
 ## Notas
-- El dato "13 posts, 5 anuncios, 1 historia" es de la prueba del 12-oct-2026. Actualizarlo si hay una muestra más grande antes de publicar.
+- El dato "111 posts, 28 anuncios, 0 falsos positivos" es de la calibración del 12-oct-2026 (v0.2.0).
 - Opcional: una captura del feed con un anuncio atenuado (sin nombres ni caras de terceros).
 - Una vez aprobada en la Chrome Web Store, cambiar el enlace del repo por el de la tienda y dejar el repo en un comentario.

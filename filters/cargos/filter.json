@@ -1,0 +1,9 @@
+{
+  "id": "cargos",
+  "name": "Cambios de trabajo",
+  "description": "Anuncios de trabajo nuevo o de salida (\"I'm happy to share that I'm starting a new position\", \"comienzo un nuevo desafío como...\"). No son humo: son noticias para tu red. Viene apagado; actívalo si no te interesan.",
+  "threshold": 3,
+  "defaultEnabled": false,
+  "reducedByAporta": false,
+  "signals": {}
+}

@@ -1,8 +1,44 @@
 [
-  { "id": "brag.es.orgullo", "pattern": "\\b(orgulloso|orgullosa|feliz|emocionado|emocionada|honrado|honrada|agradecido|agradecida) de (anunciar|compartir|contarles|comunicar)", "weight": 3, "description": "\"Orgulloso de anunciar...\"" },
-  { "id": "brag.es.no-suelo", "pattern": "\\bno (suelo|acostumbro a?) (publicar|compartir|escribir) (esto|estas cosas|sobre mi)", "weight": 2, "description": "\"No suelo publicar esto, pero...\"" },
-  { "id": "brag.es.humildemente", "pattern": "\\b(humildemente|con mucha humildad|humilde de)", "weight": 1.5, "description": "Falsa humildad" },
-  { "id": "brag.es.de-cero", "pattern": "\\bhace \\d+ anos (dormia|vivia|no tenia|trabajaba de)", "weight": 2, "description": "De la nada a la cima" },
-  { "id": "brag.es.rechazo", "pattern": "\\bme (rechazaron|despidieron|dijeron que no).{0,80}hoy (soy|lidero|dirijo|tengo)", "weight": 2, "description": "\"Me rechazaron... hoy dirijo...\"" },
-  { "id": "brag.es.nuevo-cargo", "pattern": "\\b(comienzo|empiezo|inicio) (un )?nuevo (cargo|rol|desafio) como", "weight": 1, "description": "Anuncio de cargo nuevo" }
+  {
+    "id": "brag.es.orgullo",
+    "pattern": "\\b(orgulloso|orgullosa|feliz|muy feliz|emocionado|emocionada|honrado|honrada|agradecido|agradecida) de (por fin )?(anunciar|compartir|contarles|comunicar)",
+    "weight": 2,
+    "description": "\"Orgulloso de anunciar...\""
+  },
+  {
+    "id": "brag.es.no-suelo",
+    "pattern": "\\bno (suelo|acostumbro a?) (publicar|compartir|escribir) (esto|estas cosas|sobre mi)",
+    "weight": 2,
+    "description": "\"No suelo publicar esto, pero...\""
+  },
+  {
+    "id": "brag.es.humildemente",
+    "pattern": "\\b(humildemente|con mucha humildad|humilde de)",
+    "weight": 1.5,
+    "description": "Falsa humildad"
+  },
+  {
+    "id": "brag.es.de-cero",
+    "pattern": "\\bhace \\d+ anos (dormia|vivia|no tenia|trabajaba de)",
+    "weight": 2,
+    "description": "De la nada a la cima"
+  },
+  {
+    "id": "brag.es.rechazo",
+    "pattern": "\\bme (rechazaron|despidieron|dijeron que no).{0,80}hoy (soy|lidero|dirijo|tengo)",
+    "weight": 2,
+    "description": "\"Me rechazaron... hoy dirijo...\""
+  },
+  {
+    "id": "brag.es.logro-verificado",
+    "pattern": "\\bver mi logro verificado",
+    "weight": 3,
+    "description": "Insignia autogenerada: \"Ver mi logro verificado\""
+  },
+  {
+    "id": "brag.es.reconocimiento",
+    "pattern": "\\b((fui|he sido) (reconocid[oa]|nombrad[oa]|seleccionad[oa]|premiad[oa])|top voice|recibi el premio)",
+    "weight": 1.5,
+    "description": "Premio o reconocimiento"
+  }
 ]

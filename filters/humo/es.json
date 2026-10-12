@@ -43,7 +43,7 @@
   },
   {
     "id": "humo.es.lagrimas",
-    "pattern": "\\b(llore|se me cayo una lagrima|se me aguaron los ojos|se me hizo un nudo)",
+    "pattern": "\\b(llore|se me cayo una lagrima|se me aguaron los ojos|se me hizo un nudo|con lagrimas en los ojos|me seque las lagrimas)",
     "weight": 1.5,
     "description": "Lágrimas como recurso"
   },
@@ -100,5 +100,23 @@
     "pattern": "\\bsi quieres (acompanarme|seguir mi camino|ser parte de esto)",
     "weight": 1,
     "description": "Embudo: \"si quieres acompañarme...\""
+  },
+  {
+    "id": "humo.es.gran-leccion",
+    "pattern": "\\b(gran(de)? (ensenanza|leccion)|leccion de vida|la leccion que nos deja)",
+    "weight": 2.5,
+    "description": "Gancho: \"¡GRAN ENSEÑANZA!\" / \"la lección que nos deja\""
+  },
+  {
+    "id": "humo.es.hay-quienes",
+    "pattern": "\\bhay quienes [^.\\n]{3,80}\\.\\s*y hay quienes",
+    "weight": 1.5,
+    "description": "Contraste moralizante: \"Hay quienes... Y hay quienes...\""
+  },
+  {
+    "id": "humo.es.nos-hace-humanos",
+    "pattern": "\\b(esto es lo que nos hace (ser )?humanos|somos humanos,? (y )?no (maquinas|robots|ia))",
+    "weight": 1.5,
+    "description": "Moraleja: \"esto es lo que nos hace humanos\""
   }
 ]

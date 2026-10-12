@@ -33,6 +33,7 @@ Filtros
 • Autobombo
 • Cebo de interacción
 • Promocionados
+• Cambios de trabajo (apagado por defecto)
 • Política (apagado por defecto)
 
 Privacidad

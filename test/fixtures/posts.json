@@ -132,5 +132,65 @@
     "expect": [],
     "meta": {},
     "text": "Estoy cansado de leer \"comenta SÍ y te lo envío\" y \"si tu empresa ya hace esto, este post no es para ti\". Armé una lista de 40 frases así y las convertí en reglas: https://example.com/reglas"
+  },
+  {
+    "name": "anuncio de trabajo nuevo (sintético)",
+    "expect": [
+      "cargos"
+    ],
+    "meta": {},
+    "text": "Fueron semanas difíciles en lo personal, y agradezco a quienes me acompañaron.\n\nI'm happy to share that I'm starting a new position as Data Engineer at Acme!"
+  },
+  {
+    "name": "gancho de gran lección con famoso (sintético)",
+    "expect": [
+      "humo"
+    ],
+    "meta": {},
+    "text": "🚨 ¡GRAN LECCIÓN!\n\nUn actor millonario sigue usando el mismo auto de hace 20 años.\n\nHay quienes gastan para aparentar. Y hay quienes ya llegaron y no necesitan demostrarlo."
+  },
+  {
+    "name": "gancho alarmista (sintético)",
+    "expect": [
+      "piloto"
+    ],
+    "meta": {},
+    "text": "🚨⚠️❌ Cierra la última sucursal del centro y nadie lo vio venir\n\nNo es un cierre cualquiera. La marca recortó la mitad de sus locales en la ciudad."
+  },
+  {
+    "name": "insignia autogenerada",
+    "expect": [
+      "brag"
+    ],
+    "meta": {},
+    "text": "View my verified achievement from Acme Cloud. Another step in my cloud journey 🚀"
+  },
+  {
+    "name": "gobierno corporativo no es política",
+    "expect": [],
+    "meta": {},
+    "text": "Implementamos un modelo de gobierno de datos y un comité de gobierno corporativo. El ejecutivo de cuentas lideró la migración en 6 semanas."
+  },
+  {
+    "name": "the right way no es política",
+    "expect": [],
+    "meta": {},
+    "text": "The right way to run retros is to time-box them. The question is how you keep the format fresh after 20 sprints."
+  },
+  {
+    "name": "política nacional (sintético)",
+    "expect": [
+      "politica"
+    ],
+    "meta": {},
+    "text": "El presidente de la Cámara de Diputados pidió al Ejecutivo nombrar un vocero y reemplazar a los ministros peor evaluados."
+  },
+  {
+    "name": "apóstrofo curvo de LinkedIn",
+    "expect": [
+      "cargos"
+    ],
+    "meta": {},
+    "text": "I’m happy to share that I’m starting a new position as Product Designer at Acme!"
   }
 ]

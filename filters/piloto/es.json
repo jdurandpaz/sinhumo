@@ -82,5 +82,11 @@
     "pattern": "\\ben (solo|apenas) \\d+ (segundos|minutos|horas)",
     "weight": 1,
     "description": "Hype: \"en solo 2 minutos\""
+  },
+  {
+    "id": "piloto.es.no-es-cualquiera",
+    "pattern": "\\bno es un[ao]? [a-z]+ cualquiera",
+    "weight": 1.5,
+    "description": "\"No es un cierre cualquiera\""
   }
 ]

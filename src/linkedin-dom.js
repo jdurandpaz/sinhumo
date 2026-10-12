@@ -36,8 +36,9 @@
   }
 
   // La etiqueta del anuncio va en el encabezado de la tarjeta, como una línea
-  // propia: "Promocionado por LinkedIn" (es) o "Promoted" (en).
-  const PROMOTED_LINE = /^(promocionado|patrocinado|promoted|sponsored)( por | by |$)/i;
+  // propia: "Promocionado por LinkedIn", "Promocionado • Colaboración con X"
+  // (es) o "Promoted" (en).
+  const PROMOTED_LINE = /^(promocionado|patrocinado|promoted|sponsored)( por | by | [•·] |$)/i;
 
   function isPromoted(post) {
     return post.innerText.split('\n').slice(0, 25).some((l) => PROMOTED_LINE.test(l.trim()));
