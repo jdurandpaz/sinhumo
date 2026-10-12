@@ -3,11 +3,13 @@
 (function (root) {
   'use strict';
 
-  // Minúsculas y sin tildes: las reglas se escriben sin acentos.
+  // Minúsculas, sin tildes y con apóstrofos rectos: las reglas se escriben
+  // sin acentos y con ' (LinkedIn suele usar el apóstrofo curvo ’).
   function normalize(text) {
     return String(text || '')
       .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[\u2018\u2019]/g, "'")
       .toLowerCase();
   }
 
@@ -40,6 +42,11 @@
     // LinkedIn, delatan texto pegado desde un generador.
     unicodeBold(text) {
       return (text.match(/[\u{1D400}-\u{1D7FF}]/gu) || []).length >= 6;
+    },
+    // Apertura alarmista: tres o más emojis de alerta en la primera línea.
+    alarmEmojis(text) {
+      const first = text.split('\n')[0] || '';
+      return (first.match(/[🚨⚠❌‼🛑🔥⛔]/gu) || []).length >= 3;
     },
     // Exceso de hashtags.
     hashtags(text) {

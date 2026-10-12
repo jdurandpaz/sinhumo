@@ -1,7 +1,7 @@
 {
   "id": "brag",
   "name": "Autobombo",
-  "description": "Anuncios de logros, premios y ascensos envueltos en falsa humildad, y relatos de \"de la nada a la cima\".",
+  "description": "Logros envueltos en falsa humildad (\"no suelo publicar esto, pero...\"), premios y reconocimientos, certificaciones como trofeo y relatos de \"de la nada a la cima\". Los anuncios de trabajo nuevo van aparte, en Cambios de trabajo.",
   "threshold": 3,
   "defaultEnabled": true,
   "reducedByAporta": true,

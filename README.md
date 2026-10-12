@@ -37,12 +37,28 @@ Este proyecto quiere usar la IA para eso: no solo para filtrar, sino para **moti
 |---|---|---|
 | **Historias infladas** (`humo`) | Hecho trivial → lección de vida; el taxista o el barista que te cambió la carrera; "léelo de nuevo"; formato de una línea por idea | Sí |
 | **Piloto automático** (`piloto`) | Plantilla publicada sin editar: "No es X. Es Y.", "Spoiler:", "si tu empresa ya hace esto, este post no es para ti", negritas Unicode. No dice "esto es IA": dice que nadie le puso nada propio, y necesita varias marcas juntas | Sí |
-| **Autobombo** (`brag`) | "Orgulloso de anunciar", "no suelo publicar esto, pero…", de la nada a la cima | Sí |
+| **Autobombo** (`brag`) | "No suelo publicar esto, pero…", premios y certificaciones como trofeo, insignias autogeneradas, de la nada a la cima | Sí |
 | **Cebo de interacción** (`cebo`) | "Comenta X y te lo envío", "dale like si…", "sígueme para más" | Sí |
 | **Promocionados** (`promocionados`) | Anuncios pagados ("Promocionado por LinkedIn"), detectados por la etiqueta y no por el texto | Sí |
+| **Cambios de trabajo** (`cargos`) | "I'm happy to share that I'm starting a new position", "agradezco mi paso por…". No es humo, es noticia: viene apagado por si no te interesa | No |
 | **Política** (`politica`) | Contenido partidista o electoral, **de cualquier sector** | No |
 
 Las señales de que un post **aporta** (cifras concretas, código, fuentes, un "cómo lo hicimos" con lo que no funcionó) le restan puntaje en los filtros de calidad.
+
+## Qué tan bien funciona
+
+Calibramos las reglas con una muestra de **111 posts reales** de un feed en español e inglés (octubre de 2026). Los posts no se guardan en el repo: solo ejemplos sintéticos inspirados en ellos.
+
+| Con los filtros por defecto | v0.1.1 | v0.2.0 |
+|---|---|---|
+| Anuncios detectados | 27 | 28 de 28 |
+| Humo, piloto automático y autobombo | 1 (falso positivo) | 4 |
+| Falsos positivos | 1 | 0 |
+
+Límites conocidos:
+- **LinkedIn solo carga el inicio de cada post** (hasta "… más"). sinhumo clasifica con ese fragmento, así que los recursos que aparecen al final del post (la moraleja, el embudo) muchas veces no se ven.
+- Lo que va dentro de **imágenes o videos** (por ejemplo, un "Comenta SLIDE" escrito en la imagen) no se lee.
+- Las reglas son a propósito **conservadoras**: preferimos dejar pasar humo antes que filtrar a alguien que aporta. Algunas historias infladas siguen pasando; ahí es donde más ayuda tu reporte de "Regla nueva".
 
 ## Instalar (modo desarrollador)
 

@@ -1,6 +1,38 @@
 [
-  { "id": "politica.es.eleccion", "pattern": "\\b(elecciones|eleccion presidencial|segunda vuelta|primarias|plebiscito|votar por|mi voto)", "weight": 2, "description": "Elecciones y voto" },
-  { "id": "politica.es.cargos", "pattern": "\\b(presidente|presidenta|gobierno|ministro|ministra|congreso|parlamento|senado|diputado|diputada|senador|senadora)\\b", "weight": 1, "description": "Cargos y poderes del Estado" },
-  { "id": "politica.es.espectro", "pattern": "\\b(la izquierda|la derecha|izquierdista|derechista|zurdos|fachos|progres|conservadores|oficialismo|oposicion)\\b", "weight": 2, "description": "Espectro político (ambos lados)" },
-  { "id": "politica.es.partido", "pattern": "\\b(partido politico|candidato|candidata|campana electoral|militante)", "weight": 1.5, "description": "Partidos y campañas" }
+  {
+    "id": "politica.es.eleccion",
+    "pattern": "\\b(elecciones|eleccion presidencial|segunda vuelta|primarias|plebiscito|votar por|mi voto)",
+    "weight": 2,
+    "description": "Elecciones y voto"
+  },
+  {
+    "id": "politica.es.cargos",
+    "pattern": "\\b(presidente|presidenta|ministro|ministra|parlamento|diputado|diputada|senador|senadora|gobierno(?! (corporativo|de datos|de ti|digital|del dato)))\\b",
+    "weight": 1,
+    "description": "Cargos y poderes del Estado"
+  },
+  {
+    "id": "politica.es.espectro",
+    "pattern": "\\b(la izquierda|la derecha|izquierdista|derechista|zurdos|fachos|progres|conservadores|oficialismo|oposicion)\\b",
+    "weight": 2,
+    "description": "Espectro político (ambos lados)"
+  },
+  {
+    "id": "politica.es.partido",
+    "pattern": "\\b(partido politico|candidato|candidata|campana electoral|militante)",
+    "weight": 1.5,
+    "description": "Partidos y campañas"
+  },
+  {
+    "id": "politica.es.instituciones",
+    "pattern": "\\b(camara de diputad|el senado|congreso nacional|(del|el) (poder )?ejecutivo\\b(?! (de|comercial|senior|junior))|la moneda|el gabinete|vocero de gobierno)",
+    "weight": 2,
+    "description": "Instituciones políticas"
+  },
+  {
+    "id": "politica.es.la-politica",
+    "pattern": "\\b(la politica (actual|chilena|de hoy|de este pais)|los politicos|la clase politica)",
+    "weight": 1,
+    "description": "La política como tema"
+  }
 ]

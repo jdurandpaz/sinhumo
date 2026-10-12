@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cargos.es.nuevo-cargo",
+    "pattern": "\\b(comienzo|empiezo|inicio|he empezado|empece|comence) (en )?(un )?(nuevo )?(cargo|rol|puesto|desafio|etapa) (como|en)",
+    "weight": 3,
+    "description": "Anuncio de cargo nuevo"
+  },
+  {
+    "id": "cargos.es.me-uno",
+    "pattern": "\\bme (uno|sumo|incorporo) (a|al equipo de) .{2,40} como",
+    "weight": 3,
+    "description": "\"Me sumo a X como...\""
+  },
+  {
+    "id": "cargos.es.paso-por",
+    "pattern": "\\b(agradecer|agradezco) mi paso por",
+    "weight": 3,
+    "description": "Despedida: \"agradezco mi paso por...\""
+  }
+]
