@@ -1,5 +1,9 @@
 # Cambios
 
+## 0.2.1 — 2026-10-12
+
+- **Ícono nuevo:** un búho que sale de la neblina, la sabiduría que aparece cuando se despeja el humo. Los conceptos anteriores siguen en `icons/conceptos/`.
+
 ## 0.2.0 — 2026-10-12
 
 Calibración con 111 posts reales de un feed (español e inglés).

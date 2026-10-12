@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto E: "claro en la neblina": capas de neblina que se
+       abren y dejan ver un sol/punto claro
+       paleta: base #1f2430 | neblina #8a93a0 | claro #f4b740 -->
+  <rect x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <circle cx="64" cy="56" r="17" fill="#f4b740"/>
+      <path stroke-linecap="round" fill="none" stroke-width="10" d="M34 66 H 58" stroke="#7f8895"/>
+    <path stroke-linecap="round" fill="none" stroke-width="10" d="M74 66 H 94" stroke="#7f8895"/>
+    <path stroke-linecap="round" fill="none" stroke-width="10" d="M42 82 H 86" stroke="#656c79"/>
+    <path stroke-linecap="round" fill="none" stroke-width="10" d="M52 98 H 76" stroke="#4a505d"/>
+  
+</svg>

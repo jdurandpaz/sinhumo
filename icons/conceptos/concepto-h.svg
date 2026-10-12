@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto H: "solo los ojos del buho": una capa de neblina
+       a media altura y los ojos atentos encima; mas legible en 16 px
+       paleta: base #1f2430 | buho #f4b740 | neblina #7f8895 #4a505d -->
+  <rect x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <path d="M34 76 V 50 C 34 40, 33 33, 31 25 C 41 28, 50 32, 57 38 Q 64 45, 71 38 C 78 32, 87 28, 97 25 C 95 33, 94 40, 94 50 V 76 Z" fill="#f4b740"/>
+  <circle cx="52" cy="55" r="11" fill="#1f2430"/>
+  <circle cx="76" cy="55" r="11" fill="#1f2430"/>
+  <circle cx="53" cy="55" r="4.5" fill="#f4b740"/>
+  <circle cx="75" cy="55" r="4.5" fill="#f4b740"/>
+  <path d="M60 63 H 68 L 64 70 Z" fill="#1f2430"/>
+  <path d="M28 78 H 100" fill="none" stroke="#7f8895" stroke-width="12" stroke-linecap="round"/>
+  <path d="M44 96 H 84" fill="none" stroke="#4a505d" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto F: "nube que se aclara": una nube de neblina cuya
+       base se vuelve una linea limpia
+       paleta: base #1f2430 | neblina #8a93a0 | linea #f4b740 -->
+  <rect x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <g fill="#757d8a">
+    <circle cx="50" cy="62" r="14"/>
+    <circle cx="70" cy="54" r="18"/>
+    <circle cx="86" cy="66" r="11"/>
+    <rect x="38" y="62" width="58" height="14" rx="7"/>
+  </g>
+  <rect x="33" y="85" width="62" height="10" rx="5" fill="#f4b740"/>
+</svg>
