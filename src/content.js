@@ -52,6 +52,18 @@
     return btn;
   }
 
+  // Las cajas visibles del post. LinkedIn envuelve el contenido en nodos con
+  // display: contents, que no aceptan opacidad ni alto: hay que bajar a sus hijos.
+  function blocks(el) {
+    const out = [];
+    for (const child of el.children) {
+      if (child.classList.contains('sinhumo-bar')) continue;
+      if (getComputedStyle(child).display === 'contents') out.push(...blocks(child));
+      else out.push(child);
+    }
+    return out;
+  }
+
   function reveal(post) {
     post.classList.remove(`sinhumo-${settings.mode}`);
     post.classList.add('sinhumo-revealed');
@@ -60,6 +72,7 @@
   function decorate(post, result) {
     post.setAttribute(DONE, 'hit');
     post.classList.add(`sinhumo-${settings.mode}`);
+    for (const el of blocks(post)) el.classList.add('sinhumo-block');
 
     const bar = document.createElement('div');
     bar.className = 'sinhumo-bar';

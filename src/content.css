@@ -1,3 +1,5 @@
+/* Colores neutros semitransparentes: se ven bien en el tema claro y en el
+   oscuro de LinkedIn, que no sigue necesariamente el modo del sistema. */
 .sinhumo-bar {
   display: flex;
   align-items: center;
@@ -5,34 +7,30 @@
   gap: 8px;
   padding: 6px 12px;
   font: 12px/1.4 -apple-system, system-ui, sans-serif;
-  color: #5f5f5f;
-  background: #f3f2ef;
-  border-bottom: 1px solid #e0dfdc;
-  opacity: 1 !important;
+  color: inherit;
+  background: rgba(128, 128, 128, 0.12);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
 }
+.sinhumo-bar span:first-child { opacity: 0.75; }
 .sinhumo-actions { display: flex; gap: 6px; flex-shrink: 0; }
 .sinhumo-bar button {
   font: inherit;
-  color: #0a66c2;
+  color: inherit;
   background: none;
-  border: 1px solid #0a66c2;
+  border: 1px solid rgba(128, 128, 128, 0.6);
   border-radius: 12px;
   padding: 2px 10px;
   cursor: pointer;
 }
+.sinhumo-bar button:hover { background: rgba(128, 128, 128, 0.15); }
 /* Atenuar: el post queda visible pero apagado y colapsado. */
-.sinhumo-atenuar > :not(.sinhumo-bar) {
+.sinhumo-atenuar .sinhumo-block {
   opacity: 0.25;
+  filter: grayscale(1);
   max-height: 120px;
   overflow: hidden;
-  filter: grayscale(1);
 }
 /* Ocultar: solo queda la barra. */
-.sinhumo-ocultar > :not(.sinhumo-bar) {
+.sinhumo-ocultar .sinhumo-block {
   display: none !important;
-}
-@media (prefers-color-scheme: dark) {
-  .sinhumo-bar { color: #b0b0b0; background: #1d2226; border-color: #38434f; }
-  .sinhumo-actions { display: flex; gap: 6px; flex-shrink: 0; }
-.sinhumo-bar button { color: #71b7fb; border-color: #71b7fb; }
 }
