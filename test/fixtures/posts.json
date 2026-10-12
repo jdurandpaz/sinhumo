@@ -76,5 +76,24 @@
       "piloto"
     ],
     "text": "Unpopular opinion: most teams don't need more tools.\nThe question isn't whether you'll automate, it's when.\nThis post isn't for you if you already ship weekly.\nThoughts?"
+  },
+  {
+    "name": "superación de manual con embudo (sintético)",
+    "expect": [
+      "humo"
+    ],
+    "text": "Durante años pensé que no era suficiente.\n\nTrabajaba en una agencia y soñaba con algo propio, pero siempre lo postergaba.\n\nHasta que la vida me sacudió.\n\nRenuncié sin tener todo claro. Hoy tengo mi propio estudio.\n\nLo que he aprendido es que no necesitas tenerlo todo resuelto. Necesitas atreverte a dar el primer paso.\n\nVoy a contar el proceso tal cual es, sin filtros. Si quieres acompañarme, sígueme."
+  },
+  {
+    "name": "hype de herramienta IA (sintético)",
+    "expect": [
+      "piloto"
+    ],
+    "text": "Google engineer reveals how to build 10 AI apps without writing code.\n\nNo subscriptions, virtually 0 cost.\n\nIt builds a complete website in just 3 minutes.\n\nAnd the best part?\n\nYou never pay again.\n\nInstead of scrolling tonight, try it yourself.\n\nP.S. also check out my free prompt library."
+  },
+  {
+    "name": "denuncia personal real con contraste (sintético)",
+    "expect": [],
+    "text": "Quiero compartir cómo terminó mi contrato. El viernes me dijeron que el lunes tenía capacitación y el lunes me avisaron que estaba desvinculado.\n\nLo que cuestiono no es la decisión. Lo que cuestiono es que me dieran información falsa el día anterior.\n\nAdjunto los correos para que cada uno saque sus conclusiones. Estoy buscando trabajo en operaciones mineras."
   }
 ]

@@ -1,11 +1,86 @@
 [
-  { "id": "piloto.en.not-for-you", "pattern": "\\bthis (post )?(isn'?t|is not) for you", "weight": 2.5, "description": "Segmenting disclaimer: \"this post isn't for you\"" },
-  { "id": "piloto.en.dont-apply", "pattern": "\\bdon'?t (apply|try|do) this if", "weight": 2, "description": "\"Don't apply this if...\"" },
-  { "id": "piloto.en.not-x-its-y", "pattern": "\\b(it'?s|this is) not [^.\\n]{2,40}\\.\\s*it'?s [^.\\n]{2,40}\\.", "weight": 1.5, "description": "\"It's not X. It's Y.\"" },
-  { "id": "piloto.en.the-question", "pattern": "\\bthe question (isn'?t|is not) (whether|if) .{3,60}(it'?s|but) (when|how|who)", "weight": 2, "description": "\"The question isn't if, it's when\"" },
-  { "id": "piloto.en.opening", "pattern": "^(in a world where|let'?s talk about|unpopular opinion|hard truth)", "weight": 1.5, "description": "Grandiose opening" },
-  { "id": "piloto.en.spoiler", "pattern": "\\b(spoiler alert|spoiler|plot twist)\\s*:", "weight": 1.5, "description": "Fake reveal: \"Spoiler:\"" },
-  { "id": "piloto.en.changes-everything", "pattern": "\\b(this changes everything|game ?changer)", "weight": 1.5, "description": "\"This changes everything\"" },
-  { "id": "piloto.en.closing", "pattern": "\\b(what do you think\\?|thoughts\\?|drop (a comment|your thoughts) below)", "weight": 1, "description": "Asking-for-opinion closer" },
-  { "id": "piloto.en.triad", "pattern": "(^|[.\\n]\\s*)[a-z]{3,}\\. [a-z]{3,}\\. [a-z]{3,}\\.", "weight": 1, "description": "Triad: \"Clarity. Focus. Execution.\"" }
+  {
+    "id": "piloto.en.not-for-you",
+    "pattern": "\\bthis (post )?(isn'?t|is not) for you",
+    "weight": 2.5,
+    "description": "Segmenting disclaimer: \"this post isn't for you\""
+  },
+  {
+    "id": "piloto.en.dont-apply",
+    "pattern": "\\bdon'?t (apply|try|do) this if",
+    "weight": 2,
+    "description": "\"Don't apply this if...\""
+  },
+  {
+    "id": "piloto.en.not-x-its-y",
+    "pattern": "\\b(it'?s|this is) not [^.\\n]{2,40}\\.\\s*it'?s [^.\\n]{2,40}\\.",
+    "weight": 1.5,
+    "description": "\"It's not X. It's Y.\""
+  },
+  {
+    "id": "piloto.en.the-question",
+    "pattern": "\\bthe question (isn'?t|is not) (whether|if) .{3,60}(it'?s|but) (when|how|who)",
+    "weight": 2,
+    "description": "\"The question isn't if, it's when\""
+  },
+  {
+    "id": "piloto.en.opening",
+    "pattern": "^(in a world where|let'?s talk about|unpopular opinion|hard truth)",
+    "weight": 1.5,
+    "description": "Grandiose opening"
+  },
+  {
+    "id": "piloto.en.spoiler",
+    "pattern": "\\b(spoiler alert|spoiler|plot twist)\\s*:",
+    "weight": 1.5,
+    "description": "Fake reveal: \"Spoiler:\""
+  },
+  {
+    "id": "piloto.en.changes-everything",
+    "pattern": "\\b(this changes everything|game ?changer)",
+    "weight": 1.5,
+    "description": "\"This changes everything\""
+  },
+  {
+    "id": "piloto.en.closing",
+    "pattern": "\\b(what do you think\\?|thoughts\\?|drop (a comment|your thoughts) below)",
+    "weight": 1,
+    "description": "Asking-for-opinion closer"
+  },
+  {
+    "id": "piloto.en.triad",
+    "pattern": "(^|[.\\n]\\s*)[a-z]{3,}\\. [a-z]{3,}\\. [a-z]{3,}\\.",
+    "weight": 1,
+    "description": "Triad: \"Clarity. Focus. Execution.\""
+  },
+  {
+    "id": "piloto.en.best-part",
+    "pattern": "^(and )?the best part\\?",
+    "weight": 1.5,
+    "description": "\"And the best part?\""
+  },
+  {
+    "id": "piloto.en.instead-of-scrolling",
+    "pattern": "\\binstead of (scrolling|doomscrolling|watching netflix)",
+    "weight": 2,
+    "description": "\"Instead of scrolling tonight...\""
+  },
+  {
+    "id": "piloto.en.ps-check-out",
+    "pattern": "^p\\.?s\\.? (also )?(check out|don'?t forget|follow)",
+    "weight": 1,
+    "description": "\"P.S. also check out...\""
+  },
+  {
+    "id": "piloto.en.in-just",
+    "pattern": "\\bin (just|only) \\d+ (seconds|minutes|hours)",
+    "weight": 1,
+    "description": "Hype: \"in just 2 minutes\""
+  },
+  {
+    "id": "piloto.en.never-pay",
+    "pattern": "\\b(you never pay again|virtually (0|zero|no) cost|for free,? forever)",
+    "weight": 1,
+    "description": "Hype: \"you never pay again\""
+  }
 ]

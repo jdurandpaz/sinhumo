@@ -3,16 +3,21 @@
 (function (root) {
   'use strict';
 
+  // Desde 2026 LinkedIn usa clases ofuscadas (gfl...) que cambian en cada
+  // deploy. Nos anclamos a roles y data-testid, que son más estables.
+  // Verificado en el feed el 2026-10-11 (Chrome, macOS).
   const POST_SELECTORS = [
+    '[data-testid="mainFeed"] [role="listitem"][componentkey^="update-card"]',
+    // Respaldo: HTML anterior a 2026.
     'div.feed-shared-update-v2',
     'div[data-urn^="urn:li:activity"]',
-    'div[data-id^="urn:li:activity"]',
   ];
 
   const TEXT_SELECTORS = [
+    '[data-testid="expandable-text-box"]',
+    // Respaldo: HTML anterior a 2026.
     '.update-components-text',
     '.feed-shared-inline-show-more-text',
-    '.feed-shared-update-v2__description',
   ];
 
   function findPosts(scope) {

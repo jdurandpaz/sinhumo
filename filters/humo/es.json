@@ -1,12 +1,104 @@
 [
-  { "id": "humo.es.epifania", "pattern": "\\b(y )?(ahi|entonces|en ese momento) (entendi|comprendi|aprendi|me di cuenta)", "weight": 2, "description": "Epifanía de manual: \"y ahí entendí...\"" },
-  { "id": "humo.es.me-enseno", "pattern": "\\b(esto|eso|ese dia|esa conversacion) me enseno", "weight": 2, "description": "\"Esto me enseñó...\"" },
-  { "id": "humo.es.leccion", "pattern": "\\b(la|una|mi) (leccion|ensenanza) (mas (importante|grande|valiosa)|que (aprendi|nunca olvidare))", "weight": 2, "description": "La lección más importante" },
-  { "id": "humo.es.personaje", "pattern": "\\b(un|una|el|la|mi) (mesero|mesera|taxista|conserje|barista|guardia|nino|nina|abuelo|abuela|hijo|hija|chofer|uber) (me )?(dijo|pregunto|enseno|miro)", "weight": 3, "description": "Personaje secundario que da la gran lección" },
-  { "id": "humo.es.cafe", "pattern": "\\b(tomando|me tome|tome|pedi) un cafe", "weight": 1, "description": "Escena de café como punto de partida" },
-  { "id": "humo.es.lee-de-nuevo", "pattern": "\\b(lee(lo)? (eso|esto)? ?(de nuevo|otra vez)|vuelve a leer(lo)?)", "weight": 2, "description": "\"Léelo de nuevo\"" },
-  { "id": "humo.es.nadie-habla", "pattern": "\\b(nadie|pocos) (te )?(habla|hablan|dice|dicen|cuenta|cuentan) (de )?(esto|esta verdad)", "weight": 1.5, "description": "\"Nadie te habla de esto\"" },
-  { "id": "humo.es.lagrimas", "pattern": "\\b(llore|se me cayo una lagrima|se me aguaron los ojos|se me hizo un nudo)", "weight": 1.5, "description": "Lágrimas como recurso" },
-  { "id": "humo.es.moraleja", "pattern": "^(moraleja|la clave|conclusion|en resumen)[:.]", "weight": 1, "description": "Cierre con moraleja explícita" },
-  { "id": "humo.es.no-es-x-es-y", "pattern": "\\bno (se trata de|es (sobre|el|la)) .{3,40}[.,] (se trata de|es (sobre|el|la))", "weight": 1, "description": "\"No se trata de X. Se trata de Y.\"" }
+  {
+    "id": "humo.es.epifania",
+    "pattern": "\\b(y )?(ahi|entonces|en ese momento) (entendi|comprendi|aprendi|me di cuenta)",
+    "weight": 2,
+    "description": "Epifanía de manual: \"y ahí entendí...\""
+  },
+  {
+    "id": "humo.es.me-enseno",
+    "pattern": "\\b(esto|eso|ese dia|esa conversacion) me enseno",
+    "weight": 2,
+    "description": "\"Esto me enseñó...\""
+  },
+  {
+    "id": "humo.es.leccion",
+    "pattern": "\\b(la|una|mi) (leccion|ensenanza) (mas (importante|grande|valiosa)|que (aprendi|nunca olvidare))",
+    "weight": 2,
+    "description": "La lección más importante"
+  },
+  {
+    "id": "humo.es.personaje",
+    "pattern": "\\b(un|una|el|la|mi) (mesero|mesera|taxista|conserje|barista|guardia|nino|nina|abuelo|abuela|hijo|hija|chofer|uber) (me )?(dijo|pregunto|enseno|miro)",
+    "weight": 3,
+    "description": "Personaje secundario que da la gran lección"
+  },
+  {
+    "id": "humo.es.cafe",
+    "pattern": "\\b(tomando|me tome|tome|pedi) un cafe",
+    "weight": 1,
+    "description": "Escena de café como punto de partida"
+  },
+  {
+    "id": "humo.es.lee-de-nuevo",
+    "pattern": "\\b(lee(lo)? (eso|esto)? ?(de nuevo|otra vez)|vuelve a leer(lo)?)",
+    "weight": 2,
+    "description": "\"Léelo de nuevo\""
+  },
+  {
+    "id": "humo.es.nadie-habla",
+    "pattern": "\\b(nadie|pocos) (te )?(habla|hablan|dice|dicen|cuenta|cuentan) (de )?(esto|esta verdad)",
+    "weight": 1.5,
+    "description": "\"Nadie te habla de esto\""
+  },
+  {
+    "id": "humo.es.lagrimas",
+    "pattern": "\\b(llore|se me cayo una lagrima|se me aguaron los ojos|se me hizo un nudo)",
+    "weight": 1.5,
+    "description": "Lágrimas como recurso"
+  },
+  {
+    "id": "humo.es.moraleja",
+    "pattern": "^(moraleja|la clave|conclusion|en resumen)[:.]",
+    "weight": 1,
+    "description": "Cierre con moraleja explícita"
+  },
+  {
+    "id": "humo.es.no-es-x-es-y",
+    "pattern": "\\bno (se trata de|es (sobre|el|la)) .{3,40}[.,] (se trata de|es (sobre|el|la))",
+    "weight": 1,
+    "description": "\"No se trata de X. Se trata de Y.\""
+  },
+  {
+    "id": "humo.es.durante-anos-pense",
+    "pattern": "^(durante (mucho tiempo|anos)|por (mucho tiempo|anos)|toda mi vida) (pense|crei|me dije)",
+    "weight": 1.5,
+    "description": "Apertura confesional: \"Durante mucho tiempo pensé...\""
+  },
+  {
+    "id": "humo.es.la-vida-me",
+    "pattern": "\\b(la vida me (sacudio|golpeo|cambio|puso a prueba)|todo cambio cuando)",
+    "weight": 2,
+    "description": "Giro dramático: \"la vida me sacudió\""
+  },
+  {
+    "id": "humo.es.lo-que-aprendi",
+    "pattern": "\\blo que (he aprendido|aprendi) es que",
+    "weight": 1.5,
+    "description": "\"Lo que he aprendido es que...\""
+  },
+  {
+    "id": "humo.es.no-necesitas",
+    "pattern": "\\bno necesitas [^.\\n]{2,60}\\. ?necesitas",
+    "weight": 2,
+    "description": "\"No necesitas X. Necesitas Y.\""
+  },
+  {
+    "id": "humo.es.primer-paso",
+    "pattern": "\\b(atreverte a dar el primer paso|dar el primer paso|salir de tu zona de confort)",
+    "weight": 1,
+    "description": "Moraleja motivacional"
+  },
+  {
+    "id": "humo.es.sin-filtros",
+    "pattern": "\\b(sin filtros|tal cual es|sin adornos)\\b",
+    "weight": 0.5,
+    "description": "\"Sin filtros\""
+  },
+  {
+    "id": "humo.es.acompaname",
+    "pattern": "\\bsi quieres (acompanarme|seguir mi camino|ser parte de esto)",
+    "weight": 1,
+    "description": "Embudo: \"si quieres acompañarme...\""
+  }
 ]
