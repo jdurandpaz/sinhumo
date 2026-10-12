@@ -1,27 +1,37 @@
 [
   {
     "name": "café convertido en historia de superación",
-    "expect": ["humo"],
+    "expect": [
+      "humo"
+    ],
     "text": "Hoy me tomé un café en el aeropuerto.\nEl barista me miró y me dijo:\n\"¿Por qué corres tanto?\"\nMe quedé en silencio.\nY ahí entendí todo.\nNo se trata de llegar primero. Se trata de disfrutar el camino.\nLéelo de nuevo.\nEsa conversación me enseñó más que 10 años de carrera.\n#liderazgo #resiliencia #mindset #crecimiento #exito"
   },
   {
     "name": "anuncio de logro con falsa humildad",
-    "expect": ["brag"],
+    "expect": [
+      "brag"
+    ],
     "text": "No suelo publicar estas cosas, pero hoy estoy orgulloso de anunciar que fui reconocido como Top Voice. Humildemente, gracias a todos."
   },
   {
     "name": "cebo de comentarios",
-    "expect": ["cebo"],
+    "expect": [
+      "cebo"
+    ],
     "text": "Armé una plantilla con los 50 prompts que uso a diario.\nComenta PROMPT y te lo envío por DM.\nSígueme para más."
   },
   {
     "name": "post político (izquierda)",
-    "expect": ["politica"],
+    "expect": [
+      "politica"
+    ],
     "text": "La derecha no entiende que el gobierno tiene que invertir más. En la segunda vuelta mi voto es claro."
   },
   {
     "name": "post político (derecha)",
-    "expect": ["politica"],
+    "expect": [
+      "politica"
+    ],
     "text": "La izquierda destruyó la economía. En estas elecciones hay que votar por el cambio, el gobierno fracasó."
   },
   {
@@ -36,7 +46,35 @@
   },
   {
     "name": "post en inglés con epifanía y taxista",
-    "expect": ["humo"],
+    "expect": [
+      "humo"
+    ],
     "text": "My Uber driver told me something I'll never forget.\nThat's when I realized.\nIt's not about the money. It's about the journey.\nRead that again."
+  },
+  {
+    "name": "plantilla de IA sin editar",
+    "expect": [
+      "piloto"
+    ],
+    "text": "En un mundo donde todo cambia, la mayoría sigue haciendo lo mismo.\nLa pregunta no es si la IA va a cambiar tu industria, sino cuándo.\nSpoiler: ya está pasando.\nSi tu empresa ya hace esto, este post no es para ti.\n¿Y tú, qué opinas? 👇"
+  },
+  {
+    "name": "negritas Unicode y tríada",
+    "expect": [
+      "piloto"
+    ],
+    "text": "𝗟𝗮 𝗰𝗹𝗮𝘃𝗲 𝗱𝗲𝗹 𝗲́𝘅𝗶𝘁𝗼\nClaridad. Foco. Ejecución.\nNo es talento. Es disciplina.\nEsto lo cambia todo."
+  },
+  {
+    "name": "post genuino que solo pregunta qué opinan",
+    "expect": [],
+    "text": "Estamos evaluando migrar los reportes de Metabase a dashboards embebidos. La duda es el costo de mantener los permisos por cliente. ¿Y tú, qué opinas? ¿Alguien lo ha hecho con más de 50 clientes?"
+  },
+  {
+    "name": "AI template in English",
+    "expect": [
+      "piloto"
+    ],
+    "text": "Unpopular opinion: most teams don't need more tools.\nThe question isn't whether you'll automate, it's when.\nThis post isn't for you if you already ship weekly.\nThoughts?"
   }
 ]

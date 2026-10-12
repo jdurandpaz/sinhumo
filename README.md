@@ -36,6 +36,7 @@ Este proyecto quiere usar la IA para eso: no solo para filtrar, sino para **moti
 | Filtro | Qué atrapa | Activo por defecto |
 |---|---|---|
 | **Historias infladas** (`humo`) | Hecho trivial → lección de vida; el taxista o el barista que te cambió la carrera; "léelo de nuevo"; formato de una línea por idea | Sí |
+| **Piloto automático** (`piloto`) | Plantilla publicada sin editar: "No es X. Es Y.", "Spoiler:", "si tu empresa ya hace esto, este post no es para ti", negritas Unicode. No dice "esto es IA": dice que nadie le puso nada propio, y necesita varias marcas juntas | Sí |
 | **Autobombo** (`brag`) | "Orgulloso de anunciar", "no suelo publicar esto, pero…", de la nada a la cima | Sí |
 | **Cebo de interacción** (`cebo`) | "Comenta X y te lo envío", "dale like si…", "sígueme para más" | Sí |
 | **Política** (`politica`) | Contenido partidista o electoral, **de cualquier sector** | No |
@@ -76,6 +77,7 @@ Lo más valioso **no requiere programar**: reglas nuevas, idiomas nuevos, filtro
 ## Hoja de ruta
 
 - [ ] Verificar los selectores contra el feed actual de LinkedIn
+- [ ] Más marcas de "piloto automático" sacadas del feed real en español
 - [ ] Portugués
 - [ ] Filtros nuevos: venta encubierta, carruseles motivacionales, "10 herramientas de IA que…"
 - [ ] Clasificador opcional con LLM usando la API key de cada persona (nunca un servidor del proyecto)

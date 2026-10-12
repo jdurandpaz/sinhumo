@@ -25,6 +25,11 @@
       const lines = text.split('\n').map((l) => l.trim());
       return lines.filter((l) => /^\p{Extended_Pictographic}/u.test(l)).length >= 3;
     },
+    // Negritas/cursivas con caracteres Unicode (𝗮𝘀í): no se escriben a mano en
+    // LinkedIn, delatan texto pegado desde un generador.
+    unicodeBold(text) {
+      return (text.match(/[\u{1D400}-\u{1D7FF}]/gu) || []).length >= 6;
+    },
     // Exceso de hashtags.
     hashtags(text) {
       return (text.match(/(^|\s)#[\p{L}\d_]+/gu) || []).length >= 5;

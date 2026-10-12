@@ -1,5 +1,14 @@
 {
-  "languages": ["es", "en"],
-  "filters": ["humo", "brag", "cebo", "politica"],
+  "languages": [
+    "es",
+    "en"
+  ],
+  "filters": [
+    "humo",
+    "piloto",
+    "brag",
+    "cebo",
+    "politica"
+  ],
   "aporta": "_aporta"
 }

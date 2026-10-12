@@ -1,0 +1,9 @@
+{
+  "id": "piloto",
+  "name": "Piloto automático",
+  "description": "Texto generado y publicado sin editar: la plantilla que se repite en miles de posts (\"No es X. Es Y.\", \"Spoiler:\", \"si tu empresa ya hace esto, este post no es para ti\", negritas Unicode). No detecta si se usó IA, sino que nadie le puso nada propio; una marca sola no filtra, varias juntas sí.",
+  "threshold": 4,
+  "defaultEnabled": true,
+  "reducedByAporta": true,
+  "signals": { "unicodeBold": 2, "shortLines": 1, "emojiBullets": 1 }
+}

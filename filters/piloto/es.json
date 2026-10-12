@@ -1,0 +1,12 @@
+[
+  { "id": "piloto.es.no-es-para-ti", "pattern": "\\b(este post|esto|este contenido) no es para ti", "weight": 2.5, "description": "Descargo que segmenta: \"este post no es para ti\"" },
+  { "id": "piloto.es.no-apliques", "pattern": "\\bno (apliques|hagas|intentes) esto si", "weight": 2, "description": "\"No apliques esto si...\"" },
+  { "id": "piloto.es.no-es-x-es-y", "pattern": "\\bno es [^.\\n]{2,40}\\.\\s*es [^.\\n]{2,40}\\.", "weight": 1.5, "description": "Contraste de manual: \"No es X. Es Y.\"" },
+  { "id": "piloto.es.la-pregunta", "pattern": "\\bla pregunta no es si .{3,60}sino (cuando|como|quien)", "weight": 2, "description": "\"La pregunta no es si..., sino cuándo\"" },
+  { "id": "piloto.es.apertura", "pattern": "^(en un mundo (donde|en el que)|hablemos de|(la )?verdad incomoda|opinion impopular)", "weight": 1.5, "description": "Apertura grandilocuente" },
+  { "id": "piloto.es.spoiler", "pattern": "\\b(alerta de spoiler|spoiler|plot twist)\\s*:", "weight": 1.5, "description": "Revelación falsa: \"Spoiler:\"" },
+  { "id": "piloto.es.cambia-todo", "pattern": "\\b(esto (lo )?cambia (todo|las reglas del juego)|game ?changer)", "weight": 1.5, "description": "\"Esto lo cambia todo\"" },
+  { "id": "piloto.es.te-explico", "pattern": "\\bte (lo )?explico (por que|en \\d+ (puntos|pasos))", "weight": 1, "description": "\"Te explico en 5 puntos\"" },
+  { "id": "piloto.es.cierre-opinion", "pattern": "\\b(y tu,? (que opinas|que piensas|como lo ves)|te leo en (los )?comentarios|cuentame en (los )?comentarios)", "weight": 1, "description": "Cierre pidiendo opinión" },
+  { "id": "piloto.es.triada", "pattern": "(^|[.\\n]\\s*)[a-z]{3,}\\. [a-z]{3,}\\. [a-z]{3,}\\.", "weight": 1, "description": "Tríada: \"Claridad. Foco. Ejecución.\"" }
+]
