@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "sinhumo",
   "version": "0.1.0",
-  "description": "Filtra el humo de LinkedIn: historias infladas, autobombo, cebo de interacción y los temas que elijas. Todo local, sin enviar datos.",
+  "description": "Menos humo, mejor debate: filtra historias infladas, autobombo y cebo en LinkedIn, sin burbujas. Todo local, sin enviar datos.",
   "permissions": ["storage"],
   "background": { "service_worker": "src/background.js" },
   "content_scripts": [

@@ -4,10 +4,11 @@ Gracias por sumarte. La mayor parte del valor está en las reglas, y para aporta
 
 ## Principios (no negociables)
 
-1. **Filtramos contenido vacío, no la IA.** Una regla no puede apuntar a "esto lo escribió una IA"; tiene que apuntar a un recurso vacío (epifanía de manual, cebo, autobombo).
-2. **Temas, no posturas.** Un filtro temático (política, religión, fútbol…) debe atrapar por igual a todos los sectores. Si agregas una regla que solo atrapa a un lado, agrega su espejo en el mismo PR. Los tests de política incluyen un caso por lado.
-3. **Nada de datos personales.** Los ejemplos de prueba son **sintéticos** o están reescritos de forma que no se pueda reconocer al autor. Nunca pegues un post real con nombre, empresa ni enlace.
-4. **Nada de acciones en la cuenta.** sinhumo no deja de seguir, no da likes, no hace scraping ni envía datos a servidores. Los PRs que agreguen algo de esto no se aceptan.
+1. **Subir el nivel, no armar burbujas.** Una regla nunca puede apuntar a una opinión, postura o conclusión, aunque te parezca equivocada. Un post bien argumentado con el que no estás de acuerdo tiene que pasar el filtro. Si dudas, pregúntate: ¿esta regla atraparía igual a alguien que piensa lo contrario?
+2. **Filtramos contenido vacío, no la IA.** Una regla no puede apuntar a "esto lo escribió una IA"; tiene que apuntar a un recurso vacío (epifanía de manual, cebo, autobombo).
+3. **Temas, no posturas.** Un filtro temático (política, religión, fútbol…) debe atrapar por igual a todos los sectores. Si agregas una regla que solo atrapa a un lado, agrega su espejo en el mismo PR. Los tests de política incluyen un caso por lado.
+4. **Nada de datos personales.** Los ejemplos de prueba son **sintéticos** o están reescritos de forma que no se pueda reconocer al autor. Nunca pegues un post real con nombre, empresa ni enlace.
+5. **Nada de acciones en la cuenta.** sinhumo no deja de seguir, no da likes, no hace scraping ni envía datos a servidores. Los PRs que agreguen algo de esto no se aceptan.
 
 ## Agregar o ajustar una regla
 

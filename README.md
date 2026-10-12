@@ -8,7 +8,21 @@
 
 LinkedIn se llenó de historias inspiradoras vacías, sin toque personal, con la misma plantilla repetida mil veces. Una persona se toma un café y lo sube como una epopeya de resiliencia.
 
-**sinhumo no persigue la IA.** Usar IA para escribir a partir de una idea real, con algo que enseñar, está perfecto. Lo que filtramos es el contenido vacío: la forma sin fondo, venga de donde venga.
+sinhumo busca **subir el nivel del debate y de la divulgación**: que en el feed se note más la gente que enseña, discute con argumentos o cuenta algo real, y menos la que solo llena espacio.
+
+### No es una burbuja
+
+sinhumo **no está hecho para que veas solo las ideas con las que estás de acuerdo.** Una opinión distinta a la tuya, bien argumentada, es justo el tipo de post que queremos que llegue a tu feed. Por eso:
+
+- Los filtros de calidad juzgan la **forma vacía** (la epifanía de manual, el cebo, el autobombo), nunca la postura de quien escribe.
+- Los filtros temáticos (como política) vienen **apagados** y apartan un tema completo, de todos los sectores por igual. Sirven para elegir de qué quieres hablar en LinkedIn, no para silenciar a quien piensa distinto.
+- Cada post filtrado muestra el motivo y un botón **"Ver igual"**. Nada desaparece sin que sepas por qué.
+
+### La IA no es el enemigo
+
+La IA trae una capacidad de creación increíble, y también se puede usar mal: para fabricar historias que nunca pasaron o producir posts en serie sin nada detrás. **sinhumo no persigue la IA, persigue el humo.** Escribir con IA a partir de una premisa real, con algo que enseñar, e iterarla hasta que diga lo que quieres decir, está perfecto.
+
+Este proyecto quiere usar la IA para eso: no solo para filtrar, sino para **motivarnos a redactar mejor nuestros propios posts.**
 
 ## Qué hace (y qué no)
 
@@ -66,13 +80,14 @@ Lo más valioso **no requiere programar**: reglas nuevas, idiomas nuevos, filtro
 - [ ] Filtros nuevos: venta encubierta, carruseles motivacionales, "10 herramientas de IA que…"
 - [ ] Clasificador opcional con LLM usando la API key de cada persona (nunca un servidor del proyecto)
 - [ ] Puntaje por perfil (verificado + % de posts que aportan) como ayuda para decidir a quién dejar de seguir, siempre con clic humano
+- [ ] **Modo redactor:** al escribir tu propio post, sinhumo te avisa si cae en los recursos vacíos y te sugiere cómo darle fondo (un dato, un ejemplo real, lo que no funcionó), sin reescribirlo por ti
 - [ ] Publicar en la Chrome Web Store
 
 ---
 
 ## English summary
 
-**sinhumo** ("smoke-free") is an open-source browser extension that dims or hides low-value LinkedIn posts: inflated life-lesson stories, humblebrags, engagement bait, and any topic you opt out of (e.g. politics). It does not fight AI-assisted writing, only empty content. Everything runs locally; it never performs actions on your account. Rules are plain JSON files per filter and language, so contributing doesn't require coding. See [CONTRIBUTING.md](CONTRIBUTING.md).
+**sinhumo** ("smoke-free") is an open-source browser extension that dims or hides low-value LinkedIn posts: inflated life-lesson stories, humblebrags, engagement bait, and any topic you opt out of (e.g. politics). It does not fight AI-assisted writing, only empty content, and it is explicitly not a filter bubble: quality filters judge empty form, never viewpoints, and topic filters (off by default) remove a whole topic for every side alike. The goal is to raise the level of debate and knowledge-sharing, and eventually to help people write better posts themselves. Everything runs locally; it never performs actions on your account. Rules are plain JSON files per filter and language, so contributing doesn't require coding. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licencia
 
