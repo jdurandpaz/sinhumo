@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "sinhumo",
+  "version": "0.1.0",
+  "description": "Filtra el humo de LinkedIn: historias infladas, autobombo, cebo de interacción y los temas que elijas. Todo local, sin enviar datos.",
+  "permissions": ["storage"],
+  "background": { "service_worker": "src/background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["src/engine.js", "src/linkedin-dom.js", "src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options/options.html",
+  "action": { "default_title": "sinhumo — configurar filtros" }
+}

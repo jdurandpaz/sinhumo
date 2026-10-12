@@ -1,0 +1,7 @@
+[
+  { "id": "cebo.en.comment-and-send", "pattern": "\\bcomment \\S+ and i'?ll (send|dm|share)", "weight": 3, "description": "\"Comment X and I'll send it\"" },
+  { "id": "cebo.en.like-if", "pattern": "\\b(like|react) if you", "weight": 2, "description": "\"Like if you...\"" },
+  { "id": "cebo.en.repost", "pattern": "\\b(repost|share) (this )?(if|to help|so)", "weight": 1.5, "description": "\"Repost if...\"" },
+  { "id": "cebo.en.follow-me", "pattern": "\\bfollow (me )?for more", "weight": 1.5, "description": "\"Follow for more\"" },
+  { "id": "cebo.en.save", "pattern": "\\bsave this (post )?for later", "weight": 1.5, "description": "\"Save this for later\"" }
+]

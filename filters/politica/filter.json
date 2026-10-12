@@ -1,0 +1,9 @@
+{
+  "id": "politica",
+  "name": "Política",
+  "description": "Contenido político partidista o electoral. Filtra el TEMA, nunca una postura: las reglas deben atrapar por igual a todos los sectores (ver CONTRIBUTING).",
+  "threshold": 3,
+  "defaultEnabled": false,
+  "reducedByAporta": false,
+  "signals": {}
+}

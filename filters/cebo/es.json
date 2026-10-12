@@ -1,0 +1,8 @@
+[
+  { "id": "cebo.es.comenta-y-envio", "pattern": "\\bcomenta \\S+ y te (lo |la )?(envio|mando|paso|comparto)", "weight": 3, "description": "\"Comenta X y te lo envío\"" },
+  { "id": "cebo.es.like-si", "pattern": "\\b(dale like|reacciona|pon un like) si", "weight": 2, "description": "\"Dale like si...\"" },
+  { "id": "cebo.es.comparte", "pattern": "\\b(repostea|comparte)( esto)? (si|para que)", "weight": 1.5, "description": "\"Comparte para que...\"" },
+  { "id": "cebo.es.sigueme", "pattern": "\\b(sigueme|seguime) para (mas|no perderte)", "weight": 1.5, "description": "\"Sígueme para más\"" },
+  { "id": "cebo.es.guarda", "pattern": "\\bguarda (este post|esto) para (despues|luego|cuando)", "weight": 1.5, "description": "\"Guarda este post\"" },
+  { "id": "cebo.es.adivina", "pattern": "\\b(adivina|adivinen) (que|cual)", "weight": 1, "description": "Adivinanza de cebo" }
+]

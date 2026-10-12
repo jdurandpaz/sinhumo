@@ -1,0 +1,5 @@
+{
+  "languages": ["es", "en"],
+  "filters": ["humo", "brag", "cebo", "politica"],
+  "aporta": "_aporta"
+}

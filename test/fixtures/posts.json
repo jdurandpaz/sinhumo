@@ -1,0 +1,42 @@
+[
+  {
+    "name": "café convertido en historia de superación",
+    "expect": ["humo"],
+    "text": "Hoy me tomé un café en el aeropuerto.\nEl barista me miró y me dijo:\n\"¿Por qué corres tanto?\"\nMe quedé en silencio.\nY ahí entendí todo.\nNo se trata de llegar primero. Se trata de disfrutar el camino.\nLéelo de nuevo.\nEsa conversación me enseñó más que 10 años de carrera.\n#liderazgo #resiliencia #mindset #crecimiento #exito"
+  },
+  {
+    "name": "anuncio de logro con falsa humildad",
+    "expect": ["brag"],
+    "text": "No suelo publicar estas cosas, pero hoy estoy orgulloso de anunciar que fui reconocido como Top Voice. Humildemente, gracias a todos."
+  },
+  {
+    "name": "cebo de comentarios",
+    "expect": ["cebo"],
+    "text": "Armé una plantilla con los 50 prompts que uso a diario.\nComenta PROMPT y te lo envío por DM.\nSígueme para más."
+  },
+  {
+    "name": "post político (izquierda)",
+    "expect": ["politica"],
+    "text": "La derecha no entiende que el gobierno tiene que invertir más. En la segunda vuelta mi voto es claro."
+  },
+  {
+    "name": "post político (derecha)",
+    "expect": ["politica"],
+    "text": "La izquierda destruyó la economía. En estas elecciones hay que votar por el cambio, el gobierno fracasó."
+  },
+  {
+    "name": "post técnico con datos",
+    "expect": [],
+    "text": "Bajamos la latencia del endpoint de búsqueda de 900 ms a 120 ms. Lo que probamos: índice compuesto en `company, createdAt`, y paginar por cursor en vez de offset. Lo que no funcionó: cachear en Redis, la tasa de aciertos era 12%."
+  },
+  {
+    "name": "actualización personal genuina y breve",
+    "expect": [],
+    "text": "Dejé mi trabajo en logística después de 6 años. Me voy a trabajar en mantenimiento predictivo para minería. Si alguien ha trabajado con sensores de vibración en molinos, me encantaría conversar."
+  },
+  {
+    "name": "post en inglés con epifanía y taxista",
+    "expect": ["humo"],
+    "text": "My Uber driver told me something I'll never forget.\nThat's when I realized.\nIt's not about the money. It's about the journey.\nRead that again."
+  }
+]

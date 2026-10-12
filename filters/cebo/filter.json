@@ -1,0 +1,9 @@
+{
+  "id": "cebo",
+  "name": "Cebo de interacción",
+  "description": "Posts cuyo objetivo es juntar comentarios o reacciones: \"comenta SÍ y te lo envío\", \"dale like si...\", \"sígueme para más\".",
+  "threshold": 3,
+  "defaultEnabled": true,
+  "reducedByAporta": false,
+  "signals": {}
+}

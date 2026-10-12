@@ -1,0 +1,9 @@
+{
+  "id": "humo",
+  "name": "Historias infladas",
+  "description": "Un hecho trivial convertido en épica de superación o lección de vida (el café, el taxista, el mesero que te cambió la carrera). Incluye el formato plantilla: una línea por idea, emojis como viñetas, cierre con moraleja.",
+  "threshold": 4,
+  "defaultEnabled": true,
+  "reducedByAporta": true,
+  "signals": { "shortLines": 2, "emojiBullets": 1, "hashtags": 1 }
+}

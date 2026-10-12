@@ -1,0 +1,6 @@
+[
+  { "id": "aporta.es.cifras", "pattern": "\\d+([.,]\\d+)?\\s?(%|ms|gb|mb|tb|usd|clp|uf|horas|dias|semanas|meses)\\b", "weight": -1, "description": "Cifras concretas" },
+  { "id": "aporta.es.fuente", "pattern": "\\b(fuente|paper|estudio|datos|repo|documentacion)[:]", "weight": -1, "description": "Cita una fuente" },
+  { "id": "aporta.es.codigo", "pattern": "(```|`[^`]+`)", "weight": -1.5, "description": "Incluye código" },
+  { "id": "aporta.es.como", "pattern": "\\b(como lo hicimos|paso a paso|lo que probamos|lo que no funciono|nos equivocamos en)", "weight": -1, "description": "Explica un cómo concreto" }
+]

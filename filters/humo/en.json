@@ -1,0 +1,9 @@
+[
+  { "id": "humo.en.epiphany", "pattern": "\\b(and )?(that'?s when|then) i (realized|understood|learned)", "weight": 2, "description": "\"That's when I realized...\"" },
+  { "id": "humo.en.taught-me", "pattern": "\\b(this|that|it) taught me", "weight": 2, "description": "\"This taught me...\"" },
+  { "id": "humo.en.character", "pattern": "\\b(a|the|my) (waiter|waitress|janitor|barista|cab driver|uber driver|kid|child|grandma|grandpa|son|daughter) (told|asked|taught|looked at) me", "weight": 3, "description": "Side character delivers the life lesson" },
+  { "id": "humo.en.read-again", "pattern": "\\bread (that|it|this) again", "weight": 2, "description": "\"Read that again\"" },
+  { "id": "humo.en.nobody-talks", "pattern": "\\bnobody (talks about|tells you)", "weight": 1.5, "description": "\"Nobody talks about this\"" },
+  { "id": "humo.en.tears", "pattern": "\\b(i cried|tears in my eyes|i teared up)", "weight": 1.5, "description": "Tears as a device" },
+  { "id": "humo.en.not-x-its-y", "pattern": "\\bit'?s not about .{3,40}[.,] it'?s about", "weight": 1, "description": "\"It's not about X. It's about Y.\"" }
+]

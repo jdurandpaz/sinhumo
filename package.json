@@ -1,0 +1,10 @@
+{
+  "name": "sinhumo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Extensión de navegador que filtra el humo de LinkedIn: historias infladas, autobombo, cebo de interacción y los temas que elijas.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}

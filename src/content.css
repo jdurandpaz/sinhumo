@@ -1,0 +1,36 @@
+.sinhumo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 12px;
+  font: 12px/1.4 -apple-system, system-ui, sans-serif;
+  color: #5f5f5f;
+  background: #f3f2ef;
+  border-bottom: 1px solid #e0dfdc;
+  opacity: 1 !important;
+}
+.sinhumo-bar button {
+  font: inherit;
+  color: #0a66c2;
+  background: none;
+  border: 1px solid #0a66c2;
+  border-radius: 12px;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+/* Atenuar: el post queda visible pero apagado y colapsado. */
+.sinhumo-atenuar > :not(.sinhumo-bar) {
+  opacity: 0.25;
+  max-height: 120px;
+  overflow: hidden;
+  filter: grayscale(1);
+}
+/* Ocultar: solo queda la barra. */
+.sinhumo-ocultar > :not(.sinhumo-bar) {
+  display: none !important;
+}
+@media (prefers-color-scheme: dark) {
+  .sinhumo-bar { color: #b0b0b0; background: #1d2226; border-color: #38434f; }
+  .sinhumo-bar button { color: #71b7fb; border-color: #71b7fb; }
+}

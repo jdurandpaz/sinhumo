@@ -1,0 +1,6 @@
+[
+  { "id": "brag.en.thrilled", "pattern": "\\b(proud|thrilled|excited|honored|humbled) to (announce|share)", "weight": 3, "description": "\"Thrilled to announce...\"" },
+  { "id": "brag.en.dont-usually", "pattern": "\\bi (don'?t|rarely) (usually )?(post|share) (this|about myself)", "weight": 2, "description": "\"I don't usually post this, but...\"" },
+  { "id": "brag.en.rags", "pattern": "\\b\\d+ years ago,? i (was sleeping|had nothing|was broke|lived)", "weight": 2, "description": "Rags to riches" },
+  { "id": "brag.en.rejected", "pattern": "\\bi (got|was) (rejected|fired|laid off).{0,80}today i (lead|run|own)", "weight": 2, "description": "\"I got rejected... today I lead...\"" }
+]

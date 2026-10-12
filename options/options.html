@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>sinhumo — filtros</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>sinhumo</h1>
+    <p class="lead">Elige qué filtrar de tu feed de LinkedIn. Todo se evalúa en tu navegador: nada sale de tu computador.</p>
+
+    <section>
+      <h2>Qué hacer con un post filtrado</h2>
+      <label><input type="radio" name="mode" value="atenuar"> Atenuar (apagado y colapsado, con botón "Ver igual")</label>
+      <label><input type="radio" name="mode" value="ocultar"> Ocultar (solo queda una barra)</label>
+      <label><input type="radio" name="mode" value="etiquetar"> Solo etiquetar</label>
+    </section>
+
+    <section>
+      <h2>Filtros</h2>
+      <p class="hint">Sensibilidad: un número más bajo filtra más.</p>
+      <div id="filters"></div>
+    </section>
+
+    <section>
+      <h2>Idiomas de las reglas</h2>
+      <div id="languages"></div>
+    </section>
+
+    <p id="status" role="status"></p>
+  </main>
+  <script src="../src/loader.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "id": "brag",
+  "name": "Autobombo",
+  "description": "Anuncios de logros, premios y ascensos envueltos en falsa humildad, y relatos de \"de la nada a la cima\".",
+  "threshold": 3,
+  "defaultEnabled": true,
+  "reducedByAporta": true,
+  "signals": {}
+}

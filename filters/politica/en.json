@@ -1,0 +1,6 @@
+[
+  { "id": "politica.en.election", "pattern": "\\b(election|midterms|ballot|vote for|my vote|primaries)\\b", "weight": 2, "description": "Elections and voting" },
+  { "id": "politica.en.offices", "pattern": "\\b(president|government|congress|senate|parliament|senator|minister)\\b", "weight": 1, "description": "Offices and branches of government" },
+  { "id": "politica.en.spectrum", "pattern": "\\b(the left|the right|leftist|right-wing|left-wing|liberals|conservatives|democrats|republicans)\\b", "weight": 2, "description": "Political spectrum (both sides)" },
+  { "id": "politica.en.party", "pattern": "\\b(political party|candidate|campaign trail|partisan)\\b", "weight": 1.5, "description": "Parties and campaigns" }
+]

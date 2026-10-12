@@ -1,0 +1,6 @@
+[
+  { "id": "aporta.en.numbers", "pattern": "\\d+([.,]\\d+)?\\s?(%|ms|gb|mb|tb|usd|hours|days|weeks|months)\\b", "weight": -1, "description": "Concrete numbers" },
+  { "id": "aporta.en.source", "pattern": "\\b(source|paper|study|data|repo|docs)[:]", "weight": -1, "description": "Cites a source" },
+  { "id": "aporta.en.code", "pattern": "(```|`[^`]+`)", "weight": -1.5, "description": "Includes code" },
+  { "id": "aporta.en.how", "pattern": "\\b(how we did it|step by step|what we tried|what didn'?t work|we got wrong)", "weight": -1, "description": "Explains a concrete how" }
+]
