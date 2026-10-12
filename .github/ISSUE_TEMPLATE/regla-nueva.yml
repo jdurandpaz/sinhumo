@@ -1,0 +1,34 @@
+name: Regla o frase nueva
+description: Una frase o recurso típico de humo que sinhumo todavía no atrapa.
+title: "Regla nueva: "
+labels: ["regla-nueva"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¿Viste una frase que se repite en miles de posts? Cuéntanos. **No pegues posts reales con nombre, empresa ni enlace**; basta con la frase o una versión reescrita.
+        Recuerda el principio del proyecto: la regla tiene que atrapar una **forma vacía**, nunca una opinión.
+  - type: dropdown
+    id: filtro
+    attributes:
+      label: ¿A qué filtro corresponde?
+      options: [Historias infladas, Piloto automático, Autobombo, Cebo de interacción, Política, Filtro nuevo]
+    validations:
+      required: true
+  - type: textarea
+    id: frase
+    attributes:
+      label: Frase o recurso
+      placeholder: "Ej.: \"Si tu empresa ya hace esto, este post no es para ti\""
+    validations:
+      required: true
+  - type: dropdown
+    id: idioma
+    attributes:
+      label: Idioma
+      options: [Español, Inglés, Portugués, Otro]
+  - type: textarea
+    id: ejemplo
+    attributes:
+      label: Ejemplo sintético (opcional)
+      description: Un post inventado que use el recurso, para agregarlo a los tests.

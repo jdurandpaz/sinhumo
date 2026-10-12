@@ -102,4 +102,6 @@ Lo más valioso **no requiere programar**: reglas nuevas, idiomas nuevos, filtro
 
 ## Licencia
 
-[MIT](LICENSE)
+[MIT](LICENSE). Ver también la [política de privacidad](PRIVACY.md).
+
+*sinhumo no está afiliado, respaldado ni patrocinado por LinkedIn Corporation.*

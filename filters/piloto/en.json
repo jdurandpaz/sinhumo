@@ -31,9 +31,9 @@
   },
   {
     "id": "piloto.en.spoiler",
-    "pattern": "\\b(spoiler alert|spoiler|plot twist)\\s*:",
+    "pattern": "\\bspoiler alert\\s*:",
     "weight": 1.5,
-    "description": "Fake reveal: \"Spoiler:\""
+    "description": "Fake reveal: \"Spoiler alert:\""
   },
   {
     "id": "piloto.en.changes-everything",

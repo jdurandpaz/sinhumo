@@ -11,6 +11,12 @@
       .toLowerCase();
   }
 
+  // Lo que va entre comillas se ignora: citar una frase para criticarla o
+  // comentarla no es usarla.
+  function stripQuotes(text) {
+    return text.replace(/["“«][^"”»\n]{1,200}["”»]/g, ' ');
+  }
+
   // Señales independientes del idioma. Reciben el texto y los metadatos del
   // post que entrega la capa de DOM (por ejemplo, si es un anuncio).
   const SIGNALS = {
@@ -53,7 +59,7 @@
 
     function classify(rawText, enabledIds, meta = {}) {
       const raw = String(rawText || '');
-      const text = normalize(raw);
+      const text = stripQuotes(normalize(raw));
       const enabled = enabledIds ? new Set(enabledIds) : null;
 
       const aportaMatches = aportaRules.filter((r) => r.re.test(text));

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto C: "filtro": humo entra, sale una gota limpia
+       paleta: base #1f2430 | humo #8a93a0 | embudo #f3efe7 | gota #f4b740 -->
+  <rect id="base" x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <g id="humo" fill="none" stroke="#8a93a0" stroke-width="7" stroke-linecap="round">
+    <path id="voluta-1" d="M50 42 C 44 36, 56 32, 50 26"/>
+    <path id="voluta-2" d="M74 42 C 68 36, 80 32, 74 26" stroke-opacity="0.6"/>
+  </g>
+  <path id="embudo" d="M32 50 H 96 L 72 76 V 82 H 56 V 76 Z" fill="#f3efe7" stroke="#f3efe7" stroke-width="4" stroke-linejoin="round"/>
+  <path id="gota" d="M64 88 C 68 94, 70 97, 70 100 A 6 6 0 0 1 58 100 C 58 97, 60 94, 64 88 Z" fill="#f4b740"/>
+</svg>

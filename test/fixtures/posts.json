@@ -126,5 +126,11 @@
     "expect": [],
     "meta": {},
     "text": "Contrata talento remoto en 48 horas. Prueba sin riesgo."
+  },
+  {
+    "name": "post que cita frases típicas para criticarlas",
+    "expect": [],
+    "meta": {},
+    "text": "Estoy cansado de leer \"comenta SÍ y te lo envío\" y \"si tu empresa ya hace esto, este post no es para ti\". Armé una lista de 40 frases así y las convertí en reglas: https://example.com/reglas"
   }
 ]
