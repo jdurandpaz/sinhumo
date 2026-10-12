@@ -11,8 +11,13 @@
       .toLowerCase();
   }
 
-  // Señales de formato independientes del idioma.
+  // Señales independientes del idioma. Reciben el texto y los metadatos del
+  // post que entrega la capa de DOM (por ejemplo, si es un anuncio).
   const SIGNALS = {
+    // Anuncio pagado ("Promocionado por LinkedIn").
+    promoted(_text, meta) {
+      return Boolean(meta && meta.promoted);
+    },
     // "Broetry": muchas líneas cortas, una idea por línea.
     shortLines(text) {
       const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
@@ -46,7 +51,7 @@
     const compiled = filters.map((f) => ({ ...f, compiledRules: compile(f.rules) }));
     const aportaRules = compile(aporta);
 
-    function classify(rawText, enabledIds) {
+    function classify(rawText, enabledIds, meta = {}) {
       const raw = String(rawText || '');
       const text = normalize(raw);
       const enabled = enabledIds ? new Set(enabledIds) : null;
@@ -62,10 +67,11 @@
           if (r.re.test(text)) matches.push({ id: r.id, weight: r.weight, description: r.description });
         }
         for (const [name, weight] of Object.entries(f.signals || {})) {
-          if (SIGNALS[name] && SIGNALS[name](raw)) matches.push({ id: `signal:${name}`, weight, description: name });
+          if (SIGNALS[name] && SIGNALS[name](raw, meta)) matches.push({ id: `signal:${name}`, weight, description: name });
         }
         let score = matches.reduce((s, m) => s + m.weight, 0);
         if (f.reducedByAporta && matches.length) score += aportaScore;
+        if (!matches.length) continue;
         results.push({ filter: f.id, name: f.name, score, threshold: f.threshold, hit: score >= f.threshold, matches });
       }
 

@@ -3,16 +3,31 @@
   "name": "sinhumo",
   "version": "0.1.0",
   "description": "Menos humo, mejor debate: filtra historias infladas, autobombo y cebo en LinkedIn, sin burbujas. Todo local, sin enviar datos.",
-  "permissions": ["storage"],
-  "background": { "service_worker": "src/background.js" },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
   "content_scripts": [
     {
-      "matches": ["https://www.linkedin.com/*"],
-      "js": ["src/engine.js", "src/linkedin-dom.js", "src/content.js"],
-      "css": ["src/content.css"],
+      "matches": [
+        "https://www.linkedin.com/*"
+      ],
+      "js": [
+        "src/engine.js",
+        "src/linkedin-dom.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
       "run_at": "document_idle"
     }
   ],
   "options_page": "options/options.html",
-  "action": { "default_title": "sinhumo — configurar filtros" }
+  "action": {
+    "default_title": "sinhumo — configurar filtros"
+  },
+  "homepage_url": "https://github.com/OWNER/sinhumo"
 }

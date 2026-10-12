@@ -35,5 +35,19 @@
     return '';
   }
 
-  root.SinHumoDom = { findPosts, postText };
+  // La etiqueta del anuncio va en el encabezado de la tarjeta, como una línea
+  // propia: "Promocionado por LinkedIn" (es) o "Promoted" (en).
+  const PROMOTED_LINE = /^(promocionado|patrocinado|promoted|sponsored)( por | by |$)/i;
+
+  function isPromoted(post) {
+    return post.innerText.split('\n').slice(0, 25).some((l) => PROMOTED_LINE.test(l.trim()));
+  }
+
+  // Identificador estable del post dentro del feed, para recordar los que la
+  // persona marcó como "no es humo".
+  function postKey(post) {
+    return post.getAttribute('componentkey') || post.getAttribute('data-urn') || null;
+  }
+
+  root.SinHumoDom = { findPosts, postText, isPromoted, postKey };
 })(globalThis);

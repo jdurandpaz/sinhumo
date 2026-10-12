@@ -4,96 +4,127 @@
     "expect": [
       "humo"
     ],
-    "text": "Hoy me tomé un café en el aeropuerto.\nEl barista me miró y me dijo:\n\"¿Por qué corres tanto?\"\nMe quedé en silencio.\nY ahí entendí todo.\nNo se trata de llegar primero. Se trata de disfrutar el camino.\nLéelo de nuevo.\nEsa conversación me enseñó más que 10 años de carrera.\n#liderazgo #resiliencia #mindset #crecimiento #exito"
+    "text": "Hoy me tomé un café en el aeropuerto.\nEl barista me miró y me dijo:\n\"¿Por qué corres tanto?\"\nMe quedé en silencio.\nY ahí entendí todo.\nNo se trata de llegar primero. Se trata de disfrutar el camino.\nLéelo de nuevo.\nEsa conversación me enseñó más que 10 años de carrera.\n#liderazgo #resiliencia #mindset #crecimiento #exito",
+    "meta": {}
   },
   {
     "name": "anuncio de logro con falsa humildad",
     "expect": [
       "brag"
     ],
-    "text": "No suelo publicar estas cosas, pero hoy estoy orgulloso de anunciar que fui reconocido como Top Voice. Humildemente, gracias a todos."
+    "text": "No suelo publicar estas cosas, pero hoy estoy orgulloso de anunciar que fui reconocido como Top Voice. Humildemente, gracias a todos.",
+    "meta": {}
   },
   {
     "name": "cebo de comentarios",
     "expect": [
       "cebo"
     ],
-    "text": "Armé una plantilla con los 50 prompts que uso a diario.\nComenta PROMPT y te lo envío por DM.\nSígueme para más."
+    "text": "Armé una plantilla con los 50 prompts que uso a diario.\nComenta PROMPT y te lo envío por DM.\nSígueme para más.",
+    "meta": {}
   },
   {
     "name": "post político (izquierda)",
     "expect": [
       "politica"
     ],
-    "text": "La derecha no entiende que el gobierno tiene que invertir más. En la segunda vuelta mi voto es claro."
+    "text": "La derecha no entiende que el gobierno tiene que invertir más. En la segunda vuelta mi voto es claro.",
+    "meta": {}
   },
   {
     "name": "post político (derecha)",
     "expect": [
       "politica"
     ],
-    "text": "La izquierda destruyó la economía. En estas elecciones hay que votar por el cambio, el gobierno fracasó."
+    "text": "La izquierda destruyó la economía. En estas elecciones hay que votar por el cambio, el gobierno fracasó.",
+    "meta": {}
   },
   {
     "name": "post técnico con datos",
     "expect": [],
-    "text": "Bajamos la latencia del endpoint de búsqueda de 900 ms a 120 ms. Lo que probamos: índice compuesto en `company, createdAt`, y paginar por cursor en vez de offset. Lo que no funcionó: cachear en Redis, la tasa de aciertos era 12%."
+    "text": "Bajamos la latencia del endpoint de búsqueda de 900 ms a 120 ms. Lo que probamos: índice compuesto en `company, createdAt`, y paginar por cursor en vez de offset. Lo que no funcionó: cachear en Redis, la tasa de aciertos era 12%.",
+    "meta": {}
   },
   {
     "name": "actualización personal genuina y breve",
     "expect": [],
-    "text": "Dejé mi trabajo en logística después de 6 años. Me voy a trabajar en mantenimiento predictivo para minería. Si alguien ha trabajado con sensores de vibración en molinos, me encantaría conversar."
+    "text": "Dejé mi trabajo en logística después de 6 años. Me voy a trabajar en mantenimiento predictivo para minería. Si alguien ha trabajado con sensores de vibración en molinos, me encantaría conversar.",
+    "meta": {}
   },
   {
     "name": "post en inglés con epifanía y taxista",
     "expect": [
       "humo"
     ],
-    "text": "My Uber driver told me something I'll never forget.\nThat's when I realized.\nIt's not about the money. It's about the journey.\nRead that again."
+    "text": "My Uber driver told me something I'll never forget.\nThat's when I realized.\nIt's not about the money. It's about the journey.\nRead that again.",
+    "meta": {}
   },
   {
     "name": "plantilla de IA sin editar",
     "expect": [
       "piloto"
     ],
-    "text": "En un mundo donde todo cambia, la mayoría sigue haciendo lo mismo.\nLa pregunta no es si la IA va a cambiar tu industria, sino cuándo.\nSpoiler: ya está pasando.\nSi tu empresa ya hace esto, este post no es para ti.\n¿Y tú, qué opinas? 👇"
+    "text": "En un mundo donde todo cambia, la mayoría sigue haciendo lo mismo.\nLa pregunta no es si la IA va a cambiar tu industria, sino cuándo.\nSpoiler: ya está pasando.\nSi tu empresa ya hace esto, este post no es para ti.\n¿Y tú, qué opinas? 👇",
+    "meta": {}
   },
   {
     "name": "negritas Unicode y tríada",
     "expect": [
       "piloto"
     ],
-    "text": "𝗟𝗮 𝗰𝗹𝗮𝘃𝗲 𝗱𝗲𝗹 𝗲́𝘅𝗶𝘁𝗼\nClaridad. Foco. Ejecución.\nNo es talento. Es disciplina.\nEsto lo cambia todo."
+    "text": "𝗟𝗮 𝗰𝗹𝗮𝘃𝗲 𝗱𝗲𝗹 𝗲́𝘅𝗶𝘁𝗼\nClaridad. Foco. Ejecución.\nNo es talento. Es disciplina.\nEsto lo cambia todo.",
+    "meta": {}
   },
   {
     "name": "post genuino que solo pregunta qué opinan",
     "expect": [],
-    "text": "Estamos evaluando migrar los reportes de Metabase a dashboards embebidos. La duda es el costo de mantener los permisos por cliente. ¿Y tú, qué opinas? ¿Alguien lo ha hecho con más de 50 clientes?"
+    "text": "Estamos evaluando migrar los reportes de Metabase a dashboards embebidos. La duda es el costo de mantener los permisos por cliente. ¿Y tú, qué opinas? ¿Alguien lo ha hecho con más de 50 clientes?",
+    "meta": {}
   },
   {
     "name": "AI template in English",
     "expect": [
       "piloto"
     ],
-    "text": "Unpopular opinion: most teams don't need more tools.\nThe question isn't whether you'll automate, it's when.\nThis post isn't for you if you already ship weekly.\nThoughts?"
+    "text": "Unpopular opinion: most teams don't need more tools.\nThe question isn't whether you'll automate, it's when.\nThis post isn't for you if you already ship weekly.\nThoughts?",
+    "meta": {}
   },
   {
     "name": "superación de manual con embudo (sintético)",
     "expect": [
       "humo"
     ],
-    "text": "Durante años pensé que no era suficiente.\n\nTrabajaba en una agencia y soñaba con algo propio, pero siempre lo postergaba.\n\nHasta que la vida me sacudió.\n\nRenuncié sin tener todo claro. Hoy tengo mi propio estudio.\n\nLo que he aprendido es que no necesitas tenerlo todo resuelto. Necesitas atreverte a dar el primer paso.\n\nVoy a contar el proceso tal cual es, sin filtros. Si quieres acompañarme, sígueme."
+    "text": "Durante años pensé que no era suficiente.\n\nTrabajaba en una agencia y soñaba con algo propio, pero siempre lo postergaba.\n\nHasta que la vida me sacudió.\n\nRenuncié sin tener todo claro. Hoy tengo mi propio estudio.\n\nLo que he aprendido es que no necesitas tenerlo todo resuelto. Necesitas atreverte a dar el primer paso.\n\nVoy a contar el proceso tal cual es, sin filtros. Si quieres acompañarme, sígueme.",
+    "meta": {}
   },
   {
     "name": "hype de herramienta IA (sintético)",
     "expect": [
       "piloto"
     ],
-    "text": "Google engineer reveals how to build 10 AI apps without writing code.\n\nNo subscriptions, virtually 0 cost.\n\nIt builds a complete website in just 3 minutes.\n\nAnd the best part?\n\nYou never pay again.\n\nInstead of scrolling tonight, try it yourself.\n\nP.S. also check out my free prompt library."
+    "text": "Google engineer reveals how to build 10 AI apps without writing code.\n\nNo subscriptions, virtually 0 cost.\n\nIt builds a complete website in just 3 minutes.\n\nAnd the best part?\n\nYou never pay again.\n\nInstead of scrolling tonight, try it yourself.\n\nP.S. also check out my free prompt library.",
+    "meta": {}
   },
   {
     "name": "denuncia personal real con contraste (sintético)",
     "expect": [],
-    "text": "Quiero compartir cómo terminó mi contrato. El viernes me dijeron que el lunes tenía capacitación y el lunes me avisaron que estaba desvinculado.\n\nLo que cuestiono no es la decisión. Lo que cuestiono es que me dieran información falsa el día anterior.\n\nAdjunto los correos para que cada uno saque sus conclusiones. Estoy buscando trabajo en operaciones mineras."
+    "text": "Quiero compartir cómo terminó mi contrato. El viernes me dijeron que el lunes tenía capacitación y el lunes me avisaron que estaba desvinculado.\n\nLo que cuestiono no es la decisión. Lo que cuestiono es que me dieran información falsa el día anterior.\n\nAdjunto los correos para que cada uno saque sus conclusiones. Estoy buscando trabajo en operaciones mineras.",
+    "meta": {}
+  },
+  {
+    "name": "anuncio promocionado (señal del DOM)",
+    "expect": [
+      "promocionados"
+    ],
+    "meta": {
+      "promoted": true
+    },
+    "text": "Contrata talento remoto en 48 horas. Prueba sin riesgo."
+  },
+  {
+    "name": "mismo texto sin etiqueta de anuncio",
+    "expect": [],
+    "meta": {},
+    "text": "Contrata talento remoto en 48 horas. Prueba sin riesgo."
   }
 ]

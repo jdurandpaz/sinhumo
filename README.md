@@ -39,6 +39,7 @@ Este proyecto quiere usar la IA para eso: no solo para filtrar, sino para **moti
 | **Piloto automático** (`piloto`) | Plantilla publicada sin editar: "No es X. Es Y.", "Spoiler:", "si tu empresa ya hace esto, este post no es para ti", negritas Unicode. No dice "esto es IA": dice que nadie le puso nada propio, y necesita varias marcas juntas | Sí |
 | **Autobombo** (`brag`) | "Orgulloso de anunciar", "no suelo publicar esto, pero…", de la nada a la cima | Sí |
 | **Cebo de interacción** (`cebo`) | "Comenta X y te lo envío", "dale like si…", "sígueme para más" | Sí |
+| **Promocionados** (`promocionados`) | Anuncios pagados ("Promocionado por LinkedIn"), detectados por la etiqueta y no por el texto | Sí |
 | **Política** (`politica`) | Contenido partidista o electoral, **de cualquier sector** | No |
 
 Las señales de que un post **aporta** (cifras concretas, código, fuentes, un "cómo lo hicimos" con lo que no funcionó) le restan puntaje en los filtros de calidad.
@@ -69,6 +70,14 @@ src/
 ```
 
 Cada regla tiene un patrón y un peso. Si la suma de un filtro supera su umbral, el post queda filtrado y la barra muestra qué filtro lo atrapó; al pasar el mouse se ven las reglas exactas.
+
+## Falsos positivos
+
+Ninguna regla es perfecta. Cada post filtrado tiene un botón **"No es humo"**: lo muestra, lo recuerda para no volver a filtrarlo en tu navegador y abre un reporte prellenado en este repo con el filtro y las reglas que se activaron. **El texto del post no se envía**, porque es de otra persona; si quieres, puedes agregar una versión anonimizada.
+
+### ¿Tu post quedó filtrado?
+
+Si escribiste un post que aportaba y alguien te dijo que sinhumo lo filtró, [abre un reporte](../../issues/new?template=falso-positivo.yml) y elige "Soy quien escribió el post". Revisamos la regla, y si estaba mal, se ajusta y se agrega un caso de prueba para que no se repita.
 
 ## Aportar
 

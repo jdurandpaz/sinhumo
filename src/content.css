@@ -10,6 +10,7 @@
   border-bottom: 1px solid #e0dfdc;
   opacity: 1 !important;
 }
+.sinhumo-actions { display: flex; gap: 6px; flex-shrink: 0; }
 .sinhumo-bar button {
   font: inherit;
   color: #0a66c2;
@@ -32,5 +33,6 @@
 }
 @media (prefers-color-scheme: dark) {
   .sinhumo-bar { color: #b0b0b0; background: #1d2226; border-color: #38434f; }
-  .sinhumo-bar button { color: #71b7fb; border-color: #71b7fb; }
+  .sinhumo-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.sinhumo-bar button { color: #71b7fb; border-color: #71b7fb; }
 }

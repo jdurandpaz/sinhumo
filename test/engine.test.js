@@ -23,7 +23,7 @@ test('todas las reglas compilan y tienen id único', async () => {
 for (const post of posts) {
   test(`fixture: ${post.name}`, async () => {
     const engine = createEngine(await loadFilters(readJson));
-    const result = engine.classify(post.text);
+    const result = engine.classify(post.text, null, post.meta);
     const hits = result.hits.map((h) => h.filter).sort();
     assert.deepStrictEqual(hits, [...post.expect].sort(), JSON.stringify(result.results, null, 2));
   });

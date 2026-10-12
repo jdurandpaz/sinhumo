@@ -1,0 +1,47 @@
+name: Falso positivo
+description: Un post que aportaba quedó filtrado (tuyo o de otra persona).
+title: "Falso positivo: "
+labels: ["falso-positivo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar: los falsos positivos son lo que más nos ayuda a mejorar las reglas.
+        **No pegues el post original con nombres, empresas ni enlaces.** Si quieres mostrar el texto, reescríbelo de forma que no se pueda reconocer al autor.
+  - type: dropdown
+    id: quien
+    attributes:
+      label: ¿Quién reporta?
+      options:
+        - Lo vi en mi feed
+        - Soy quien escribió el post
+    validations:
+      required: true
+  - type: textarea
+    id: filtros
+    attributes:
+      label: Filtros que lo atraparon
+      description: Se llena solo si reportas desde el botón "No es humo".
+    validations:
+      required: true
+  - type: textarea
+    id: reglas
+    attributes:
+      label: Reglas que se activaron
+      description: Se llena solo desde el botón. Si no lo tienes, describe qué frase crees que lo hizo caer.
+  - type: textarea
+    id: por-que
+    attributes:
+      label: ¿Por qué no es humo?
+      description: Qué aportaba el post (un dato, una experiencia real, una opinión con argumentos…).
+    validations:
+      required: true
+  - type: textarea
+    id: texto
+    attributes:
+      label: Texto anonimizado (opcional)
+      description: Una versión reescrita sin datos que identifiquen al autor. La usaremos como caso de prueba.
+  - type: input
+    id: version
+    attributes:
+      label: Versión de sinhumo

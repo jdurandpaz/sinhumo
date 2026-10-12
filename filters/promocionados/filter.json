@@ -1,0 +1,11 @@
+{
+  "id": "promocionados",
+  "name": "Promocionados",
+  "description": "Anuncios pagados que LinkedIn mete en el feed (\"Promocionado por LinkedIn\"). No depende del texto: se detecta por la etiqueta del anuncio.",
+  "threshold": 1,
+  "defaultEnabled": true,
+  "reducedByAporta": false,
+  "signals": {
+    "promoted": 10
+  }
+}
