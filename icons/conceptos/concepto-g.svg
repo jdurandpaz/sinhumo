@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- sinhumo / concepto G: "el buho asoma entre la neblina": la sabiduria
+       que aparece cuando se despeja el humo (variante del concepto E)
+       paleta: base #1f2430 | buho #f4b740 | neblina #7f8895 #656c79 #4a505d -->
+  <rect x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <path d="M38 72 V 46 C 38 38, 37 32, 35 25 C 44 28, 52 31, 58 36 Q 64 42, 70 36 C 76 31, 84 28, 93 25 C 91 32, 90 38, 90 46 V 72 Z" fill="#f4b740"/>
+  <circle cx="52" cy="52" r="10" fill="#1f2430"/>
+  <circle cx="76" cy="52" r="10" fill="#1f2430"/>
+  <circle cx="53" cy="52" r="4" fill="#f4b740"/>
+  <circle cx="75" cy="52" r="4" fill="#f4b740"/>
+  <path d="M60 59 H 68 L 64 66 Z" fill="#1f2430"/>
+  <path d="M30 70 H 54" fill="none" stroke="#7f8895" stroke-width="10" stroke-linecap="round"/>
+  <path d="M74 70 H 98" fill="none" stroke="#7f8895" stroke-width="10" stroke-linecap="round"/>
+  <path d="M40 85 H 88" fill="none" stroke="#656c79" stroke-width="10" stroke-linecap="round"/>
+  <path d="M52 100 H 76" fill="none" stroke="#4a505d" stroke-width="10" stroke-linecap="round"/>
+</svg>

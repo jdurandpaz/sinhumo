@@ -1,8 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-  <!-- sinhumo / "la voluta se asienta": una voluta de humo (que tambien es la S
-       de sinhumo) baja y termina en una linea limpia
-       paleta: base #1f2430 | humo #8a93a0 | linea #f4b740 -->
-  <rect id="base" x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
-  <path id="voluta" d="M70 32 C 56 28, 42 36, 48 46 C 54 55, 70 56, 66 68 C 63 77, 52 81, 46 82" fill="none" stroke="#8a93a0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-  <path id="linea-clara" d="M46 82 H 88" fill="none" stroke="#f4b740" stroke-width="12" stroke-linecap="round"/>
+  <!-- sinhumo / "el buho sale de la neblina": la sabiduria que aparece cuando
+       se despeja el humo (cuerpo entero, discos faciales, pico y alas). Paleta: buho gris #aab2bd #7f8895, ojos y pico ambar #f4b740 | neblina #5f6773 #4a505d -->
+  <rect x="16" y="16" width="96" height="96" rx="24" fill="#1f2430"/>
+  <path d="M40 92 V 52 C 40 40, 42 32, 44 26 C 50 30, 56 31, 64 31 C 72 31, 78 30, 84 26 C 86 32, 88 40, 88 52 V 92 Z" fill="#aab2bd"/>
+  <path d="M40 60 C 48 66, 50 80, 46 92 H 40 Z" fill="#7f8895"/>
+  <path d="M88 60 C 80 66, 78 80, 82 92 H 88 Z" fill="#7f8895"/>
+  <circle cx="53" cy="50" r="12" fill="#f4b740"/>
+  <circle cx="75" cy="50" r="12" fill="#f4b740"/>
+  <circle cx="53" cy="50" r="6" fill="#1f2430"/>
+  <circle cx="75" cy="50" r="6" fill="#1f2430"/>
+  <path d="M59 60 H 69 L 64 69 Z" fill="#f4b740"/>
+  <path d="M56 76 L 60 80 L 64 76 L 68 80 L 72 76" fill="none" stroke="#7f8895" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 86 H 100" fill="none" stroke="#5f6773" stroke-width="12" stroke-linecap="round"/>
+  <path d="M44 102 H 84" fill="none" stroke="#4a505d" stroke-width="10" stroke-linecap="round"/>
 </svg>
