@@ -43,6 +43,10 @@ Este proyecto quiere usar la IA para eso: no solo para filtrar, sino para **moti
 | **Cambios de trabajo** (`cargos`) | "I'm happy to share that I'm starting a new position", "agradezco mi paso por…". No es humo, es noticia: viene apagado por si no te interesa | No |
 | **Política** (`politica`) | Contenido partidista o electoral, **de cualquier sector** | No |
 
+### Nivel de exigencia
+
+sinhumo viene en **Estricto**: filtra más humo y, a veces, apaga un post que sí valía. Si te pasa seguido, en las opciones puedes bajar a **Equilibrado** (solo lo más evidente) o **Suave** (solo los casos de manual), o marcar ese post con **"No es humo"** para que no se vuelva a filtrar y nos ayudes a ajustar la regla. El nivel cambia los filtros de forma (humo, piloto automático, autobombo, cebo); los de temas y los anuncios no cambian.
+
 Las señales de que un post **aporta** (cifras concretas, código, fuentes, un "cómo lo hicimos" con lo que no funcionó) le restan puntaje en los filtros de calidad.
 
 ## Qué tan bien funciona
@@ -55,17 +59,19 @@ Calibramos las reglas con una muestra de **111 posts reales** de un feed en espa
 | Humo, piloto automático y autobombo | 1 (falso positivo) | 4 |
 | Falsos positivos | 1 | 0 |
 
+En la v0.3.0 sumamos reglas y el nivel Estricto, y lo probamos con otra muestra de **47 posts** del mismo feed (35 sin contar anuncios). En Estricto quedan apagados 6 de esos 35 (la página viral con titular gritado, el "léelo si tienes ganas de tirar la toalla", el embudo de ventas, el "estás usando solo el 23%" y dos autobombos); en Equilibrado y Suave, ninguno. Ningún post con datos, fuentes o una historia con sustancia quedó filtrado en Estricto.
+
 Límites conocidos:
 - **El texto se lee completo, aunque LinkedIn lo muestre recortado** hasta "… más": el recorte es solo visual (verificado en el feed el 13-oct-2026).
 - Lo que va dentro de **imágenes o videos** (por ejemplo, un "Comenta SLIDE" escrito en la imagen) no se lee.
-- Las reglas son a propósito **conservadoras**: preferimos dejar pasar humo antes que filtrar a alguien que aporta. Algunas historias infladas siguen pasando; ahí es donde más ayuda tu reporte de "Regla nueva".
+- En **Equilibrado y Suave** las reglas son conservadoras: preferimos dejar pasar humo antes que filtrar a alguien que aporta. En **Estricto** es al revés, y por eso está a un clic el "No es humo".
 
 ## Instalar (modo desarrollador)
 
 1. Descarga o clona este repo.
 2. Abre `chrome://extensions` y activa **Modo de desarrollador**.
 3. Haz clic en **Cargar descomprimida** y elige la carpeta del repo.
-4. Haz clic en el ícono de sinhumo para elegir filtros, sensibilidad e idiomas.
+4. Haz clic en el ícono de sinhumo para elegir el nivel de exigencia, los filtros e idiomas.
 
 Funciona en Chrome, Edge, Brave y Arc. Firefox está pendiente.
 

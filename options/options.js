@@ -1,4 +1,4 @@
-const DEFAULT_SETTINGS = { mode: 'atenuar', enabled: null, languages: ['es', 'en'], thresholds: {} };
+const DEFAULT_SETTINGS = { mode: 'atenuar', level: SinHumoLoader.DEFAULT_LEVEL, enabled: null, languages: ['es', 'en'], thresholds: {} };
 const readJson = async (p) => (await fetch(chrome.runtime.getURL(p))).json();
 
 async function load() {
@@ -23,6 +23,16 @@ load().then(({ settings, config }) => {
     radio.addEventListener('change', () => { settings.mode = radio.value; save(settings); });
   }
 
+  const levelHints = [];
+  for (const radio of document.querySelectorAll('input[name=level]')) {
+    radio.checked = radio.value === settings.level;
+    radio.addEventListener('change', () => {
+      settings.level = radio.value;
+      save(settings);
+      for (const update of levelHints) update();
+    });
+  }
+
   const box = document.getElementById('filters');
   for (const f of config.filters) {
     const row = document.createElement('div');
@@ -44,9 +54,18 @@ load().then(({ settings, config }) => {
     threshold.type = 'number';
     threshold.min = '1';
     threshold.step = '0.5';
-    threshold.value = settings.thresholds[f.id] ?? f.threshold;
-    threshold.setAttribute('aria-label', `Sensibilidad de ${f.name}`);
-    threshold.addEventListener('change', () => { settings.thresholds[f.id] = Number(threshold.value); save(settings); });
+    threshold.value = settings.thresholds[f.id] ?? '';
+    const showLevel = () => {
+      threshold.placeholder = String(SinHumoLoader.effectiveThreshold(f, { ...settings, thresholds: {} }));
+    };
+    showLevel();
+    levelHints.push(showLevel);
+    threshold.setAttribute('aria-label', `Umbral de ${f.name}`);
+    threshold.addEventListener('change', () => {
+      if (threshold.value === '') delete settings.thresholds[f.id];
+      else settings.thresholds[f.id] = Number(threshold.value);
+      save(settings);
+    });
 
     const desc = document.createElement('p');
     desc.textContent = f.description;

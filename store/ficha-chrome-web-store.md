@@ -25,7 +25,9 @@ Escribir con IA a partir de una idea real está perfecto. Lo que filtramos es el
 Cómo funciona
 • Cada post filtrado se atenúa (o se oculta, o solo se etiqueta) y muestra el motivo.
 • "Ver igual" lo abre; "No es humo" lo marca como falso positivo y abre un reporte para mejorar la regla.
-• Eliges qué filtros usar y qué tan estrictos son.
+• El ícono cuenta cuántos posts revisó y filtró.
+• Viene en nivel Estricto: filtra más humo y a veces apaga un post que sí valía. Si te pasa seguido, baja a Equilibrado o Suave en las opciones.
+• Eliges qué filtros usar.
 
 Filtros
 • Historias infladas

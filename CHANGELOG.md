@@ -1,9 +1,12 @@
 # Cambios
 
-## 0.2.3 — 2026-10-13
+## 0.3.0 — 2026-10-13
 
-- **Contador en el ícono:** muestra cuántos posts filtró en la pestaña; al pasar el mouse, cuántos revisó. Así se ve que la extensión está trabajando aunque el feed venga limpio.
-- **README:** se corrige un límite que ya no aplica. LinkedIn trae el texto completo del post y el "… más" solo lo recorta a la vista, así que sinhumo clasifica el post entero.
+- **Nivel de exigencia, Estricto por defecto:** los filtros de forma (humo, piloto automático, autobombo, cebo) usan el 60% de su umbral. En opciones se puede bajar a Equilibrado (el comportamiento anterior) o Suave (150%). Los filtros de temas y los anuncios no cambian con el nivel. Un umbral puesto a mano sigue mandando.
+- **Reglas nuevas** (es/en): "no te rindas", "léelo si tienes ganas de…", "Nunca pensé que iba a escribir este post", titular gritado en mayúsculas, "etiqueta a alguien", "escríbeme por mensaje directo", "pueden votarlos aquí", "+ Seguir + 🔔", "estás usando solo el 23%", "No les entrego X. Les entrego Y", "si vendes… escríbeme", "me siento muy orgullosa de", nominaciones propias.
+- **Contador en el ícono:** muestra cuántos posts filtró en la pestaña; al pasar el mouse, cuántos revisó.
+- **README:** se corrige un límite que ya no aplica. LinkedIn trae el texto completo del post y el "… más" solo lo recorta a la vista.
+- Probado con una muestra nueva de 47 posts: en Estricto se apagan 6 de 35 posts sin anuncio; en Equilibrado, ninguno.
 
 ## 0.2.2 — 2026-10-13
 

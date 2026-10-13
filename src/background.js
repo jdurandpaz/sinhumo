@@ -2,7 +2,7 @@
 // content script. Así las reglas no quedan expuestas a la página de LinkedIn.
 importScripts('loader.js');
 
-const DEFAULT_SETTINGS = { mode: 'atenuar', enabled: null, languages: ['es', 'en'], thresholds: {} };
+const DEFAULT_SETTINGS = { mode: 'atenuar', level: 'estricto', enabled: null, languages: ['es', 'en'], thresholds: {} };
 
 const readJson = async (p) => (await fetch(chrome.runtime.getURL(p))).json();
 
@@ -17,9 +17,7 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
       const settings = await getSettings();
       const config = await SinHumoLoader.loadFilters(readJson, settings.languages);
       if (!settings.enabled) settings.enabled = config.filters.filter((f) => f.defaultEnabled).map((f) => f.id);
-      for (const f of config.filters) {
-        if (settings.thresholds[f.id] != null) f.threshold = settings.thresholds[f.id];
-      }
+      for (const f of config.filters) f.threshold = SinHumoLoader.effectiveThreshold(f, settings);
       sendResponse({ config, settings });
     })();
     return true;
