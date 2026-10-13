@@ -1,5 +1,10 @@
 # Cambios
 
+## 0.2.2 — 2026-10-13
+
+- **Cebo:** "Comenta \"SÍ\" y te lo envío" con la palabra clave entre comillas volvía a pasar, porque el motor ignoraba todo lo citado. Ahora solo ignora citas de varias palabras (las que se usan para comentar una frase).
+- **Tienda:** capturas 1280x800 e imagen promocional en `store/capturas/`, generadas con posts sintéticos y el motor real (`npm run capturas`).
+
 ## 0.2.1 — 2026-10-12
 
 - **Ícono nuevo:** un búho que sale de la neblina, la sabiduría que aparece cuando se despeja el humo. Los conceptos anteriores siguen en `icons/conceptos/`.
