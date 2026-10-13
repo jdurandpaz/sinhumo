@@ -56,7 +56,7 @@ Calibramos las reglas con una muestra de **111 posts reales** de un feed en espa
 | Falsos positivos | 1 | 0 |
 
 Límites conocidos:
-- **LinkedIn solo carga el inicio de cada post** (hasta "… más"). sinhumo clasifica con ese fragmento, así que los recursos que aparecen al final del post (la moraleja, el embudo) muchas veces no se ven.
+- **El texto se lee completo, aunque LinkedIn lo muestre recortado** hasta "… más": el recorte es solo visual (verificado en el feed el 13-oct-2026).
 - Lo que va dentro de **imágenes o videos** (por ejemplo, un "Comenta SLIDE" escrito en la imagen) no se lee.
 - Las reglas son a propósito **conservadoras**: preferimos dejar pasar humo antes que filtrar a alguien que aporta. Algunas historias infladas siguen pasando; ahí es donde más ayuda tu reporte de "Regla nueva".
 

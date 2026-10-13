@@ -1,5 +1,10 @@
 # Cambios
 
+## 0.2.3 — 2026-10-13
+
+- **Contador en el ícono:** muestra cuántos posts filtró en la pestaña; al pasar el mouse, cuántos revisó. Así se ve que la extensión está trabajando aunque el feed venga limpio.
+- **README:** se corrige un límite que ya no aplica. LinkedIn trae el texto completo del post y el "… más" solo lo recorta a la vista, así que sinhumo clasifica el post entero.
+
 ## 0.2.2 — 2026-10-13
 
 - **Cebo:** "Comenta \"SÍ\" y te lo envío" con la palabra clave entre comillas volvía a pasar, porque el motor ignoraba todo lo citado. Ahora solo ignora citas de varias palabras (las que se usan para comentar una frase).

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "sinhumo",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Menos humo, mejor debate: filtra historias infladas, autobombo y cebo en LinkedIn, sin burbujas. Todo local, sin enviar datos.",
   "permissions": [
     "storage"
