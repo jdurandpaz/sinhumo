@@ -73,8 +73,8 @@ Filtrar visualmente los posts del feed de LinkedIn según filtros de calidad y d
 | Recurso | Tamaño | Estado |
 |---|---|---|
 | Ícono | 128x128 PNG | `icons/icon-128.png` |
-| Capturas (1 a 5) | 1280x800 o 640x400 | Pendiente: feed con un post atenuado, la barra con "Ver igual / No es humo", la página de opciones. **Sin nombres ni caras de terceros**: usar posts sintéticos o difuminar. |
-| Imagen promocional pequeña | 440x280 | Pendiente (opcional pero recomendada) |
+| Capturas (1 a 5) | 1280x800 | Listas en `store/capturas/`: `captura-1-feed.png`, `captura-2-reporte.png`, `captura-3-opciones.png`. Posts sintéticos (`store/capturas/posts.json`) clasificados con el motor real; se regeneran con `npm run capturas`. |
+| Imagen promocional pequeña | 440x280 | Lista: `store/capturas/promo-440x280.png` |
 
 ## Antes de enviar
 - [ ] Cuenta de desarrollador de Chrome Web Store (pago único de USD 5, lo hace Julio).

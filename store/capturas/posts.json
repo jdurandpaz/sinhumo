@@ -1,0 +1,22 @@
+[
+  {
+    "id": "humo",
+    "autor": "Autor de ejemplo", "rol": "Coach de liderazgo",
+    "texto": "Hoy un barista me dio la lección más grande de mi carrera.\nLe pedí un café.\nMe miró a los ojos.\nY me dijo: \"¿Lo quiere como siempre?\"\nNo supe qué responder.\nAhí entendí todo.\nEl liderazgo no se trata de títulos.\nSe trata de recordar a las personas.\nLloré en el auto.\n¿Y tú, cuándo fue la última vez que alguien te recordó?"
+  },
+  {
+    "id": "aporta",
+    "autor": "Autora de ejemplo", "rol": "Ingeniera de datos",
+    "texto": "Medimos el tiempo de respuesta de nuestra API antes y después de agregar caché en las consultas de catálogo.\n\nEl p95 bajó de 840 ms a 210 ms con 2.000 usuarios simultáneos. El costo fue invalidar bien: dos veces servimos precios viejos hasta que atamos la caché a los eventos de actualización.\n\nDejé el script de la prueba de carga y los datos crudos en el repositorio, por si alguien quiere repetirla con su propio stack."
+  },
+  {
+    "id": "piloto",
+    "autor": "Autor de ejemplo", "rol": "Growth & Sales",
+    "texto": "Si tu empresa ya hace esto, este post no es para ti. 👇\n\nNo es falta de leads.\nEs falta de sistema.\n\n✅ Prospección automatizada\n✅ Seguimiento en 24 horas\n✅ Cierre predecible\n\nSpoiler: el 90% de los equipos lo hace al revés."
+  },
+  {
+    "id": "cebo",
+    "autor": "Autora de ejemplo", "rol": "Consultora",
+    "texto": "Armé una guía con 50 prompts para vender más. 🚀\n\nComenta \"GUÍA\" y te la envío por mensaje privado.\n\nDale like para que le llegue a más gente."
+  }
+]

@@ -192,5 +192,17 @@
     ],
     "meta": {},
     "text": "I’m happy to share that I’m starting a new position as Product Designer at Acme!"
+  },
+  {
+    "name": "cebo con la palabra clave entre comillas",
+    "expect": [
+      "cebo"
+    ],
+    "text": "Armé una guía con 50 prompts para vender más. 🚀\n\nComenta \"GUÍA\" y te la envío por mensaje privado."
+  },
+  {
+    "name": "cita de varias palabras para criticar el cebo",
+    "expect": [],
+    "text": "Cada semana veo posts que dicen \"comenta SÍ y te lo envío\". Prefiero compartir el enlace directo: si sirve, sirve igual sin pedir nada a cambio."
   }
 ]

@@ -14,9 +14,10 @@
   }
 
   // Lo que va entre comillas se ignora: citar una frase para criticarla o
-  // comentarla no es usarla.
+  // comentarla no es usarla. Solo frases (con al menos un espacio): una
+  // palabra sola entre comillas suele ser la clave del cebo (Comenta "SÍ").
   function stripQuotes(text) {
-    return text.replace(/["“«][^"”»\n]{1,200}["”»]/g, ' ');
+    return text.replace(/["“«](?=[^"”»\n]*\s[^"”»\n]*["”»])[^"”»\n]{1,200}["”»]/g, ' ');
   }
 
   // Señales independientes del idioma. Reciben el texto y los metadatos del
