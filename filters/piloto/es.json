@@ -88,5 +88,23 @@
     "pattern": "\\bno es un[ao]? [a-z]+ cualquiera",
     "weight": 1.5,
     "description": "\"No es un cierre cualquiera\""
+  },
+  {
+    "id": "piloto.es.porcentaje-uso",
+    "pattern": "\\bestas (usando|aprovechando|desperdiciando) (solo |apenas )?(el |un )?\\d+ ?%",
+    "weight": 2.5,
+    "description": "Gancho de plantilla: \"estás usando solo el 23%\""
+  },
+  {
+    "id": "piloto.es.no-entrego-x",
+    "pattern": "\\bno (te |les |le )?(entrego|vendo|ofrezco|doy) [^.\\n]{2,40}\\.\\s*(te |les |le )?(entrego|vendo|ofrezco|doy) ",
+    "weight": 1.5,
+    "description": "Contraste de plantilla: \"No les entrego X. Les entrego Y\""
+  },
+  {
+    "id": "piloto.es.si-vendes-escribeme",
+    "pattern": "\\bsi (vendes|eres|tienes|quieres|buscas)[^.\\n]{3,90}(escribeme|mandame|enviame|comenta)",
+    "weight": 2,
+    "description": "Cierre de embudo: \"si vendes B2B y quieres..., escríbeme\""
   }
 ]

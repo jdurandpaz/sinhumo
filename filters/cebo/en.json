@@ -1,7 +1,56 @@
 [
-  { "id": "cebo.en.comment-and-send", "pattern": "\\bcomment \\S+ and i'?ll (send|dm|share)", "weight": 3, "description": "\"Comment X and I'll send it\"" },
-  { "id": "cebo.en.like-if", "pattern": "\\b(like|react) if you", "weight": 2, "description": "\"Like if you...\"" },
-  { "id": "cebo.en.repost", "pattern": "\\b(repost|share) (this )?(if|to help|so)", "weight": 1.5, "description": "\"Repost if...\"" },
-  { "id": "cebo.en.follow-me", "pattern": "\\bfollow (me )?for more", "weight": 1.5, "description": "\"Follow for more\"" },
-  { "id": "cebo.en.save", "pattern": "\\bsave this (post )?for later", "weight": 1.5, "description": "\"Save this for later\"" }
+  {
+    "id": "cebo.en.comment-and-send",
+    "pattern": "\\bcomment \\S+ and i'?ll (send|dm|share)",
+    "weight": 3,
+    "description": "\"Comment X and I'll send it\""
+  },
+  {
+    "id": "cebo.en.like-if",
+    "pattern": "\\b(like|react) if you",
+    "weight": 2,
+    "description": "\"Like if you...\""
+  },
+  {
+    "id": "cebo.en.repost",
+    "pattern": "\\b(repost|share) (this )?(if|to help|so)",
+    "weight": 1.5,
+    "description": "\"Repost if...\""
+  },
+  {
+    "id": "cebo.en.follow-me",
+    "pattern": "\\bfollow (me )?for more",
+    "weight": 1.5,
+    "description": "\"Follow for more\""
+  },
+  {
+    "id": "cebo.en.save",
+    "pattern": "\\bsave this (post )?for later",
+    "weight": 1.5,
+    "description": "\"Save this for later\""
+  },
+  {
+    "id": "cebo.en.tag",
+    "pattern": "\\btag (someone|a friend|a person|a colleague|someone who)",
+    "weight": 2,
+    "description": "Asks to tag someone"
+  },
+  {
+    "id": "cebo.en.dm-me",
+    "pattern": "\\b(dm me|send me a (dm|message)|message me)\\b",
+    "weight": 1.5,
+    "description": "Funnel close: \"DM me\""
+  },
+  {
+    "id": "cebo.en.vote",
+    "pattern": "\\bvote for (me|us|them) here\\b",
+    "weight": 1.5,
+    "description": "Asks for votes"
+  },
+  {
+    "id": "cebo.en.bell",
+    "pattern": "(\\+ ?follow \\+ ?🔔|(hit|ring) the bell)",
+    "weight": 1.5,
+    "description": "Signature \"+ Follow + 🔔\""
+  }
 ]

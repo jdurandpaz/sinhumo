@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 const { createEngine } = require('../../src/engine');
-const { loadFilters } = require('../../src/loader');
+const { loadFilters, effectiveThreshold } = require('../../src/loader');
 
 const root = path.join(__dirname, '..', '..');
 const out = path.join(__dirname, '.build');
@@ -66,20 +66,24 @@ function page(body, extraHead = '') {
 function optionsPage(config) {
   const rows = config.filters.map((f) => `<div class="filter">
       <label><input type="checkbox"${f.defaultEnabled ? ' checked' : ''}> ${esc(f.name)}</label>
-      <input type="number" value="${f.threshold}"><p>${esc(f.description)}</p></div>`).join('');
+      <input type="number" placeholder="${effectiveThreshold(f, { level: 'estricto' })}"><p>${esc(f.description)}</p></div>`).join('');
   return `<!doctype html><html lang="es"><head><meta charset="utf-8">
     <link rel="stylesheet" href="${url('options/options.css')}"><style>${STYLE}
-    .feed { background: #fff; padding: 0; } .feed main { padding-top: 36px; transform: scale(0.75); transform-origin: top center; }
-    .filter p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .feed { background: #fff; padding: 0; } .feed main { padding-top: 36px; transform: scale(0.7); transform-origin: top center; }
+    .filter p { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
     </style></head><body>
-    ${panel('Tú eliges qué filtrar', 'Filtros por paquete y sensibilidad ajustable. Los de temas, como política, vienen apagados y apartan el tema completo, de todos los sectores por igual.')}
+    ${panel('Tú eliges qué tan estricto', 'Viene en Estricto. Si te apaga posts que sí valían, bajas a Equilibrado o Suave. Los filtros de temas, como política, vienen apagados y apartan el tema completo, de todos los sectores por igual.')}
     <div class="feed"><main><h1>sinhumo</h1>
       <p class="lead">Elige qué filtrar de tu feed de LinkedIn. Todo se evalúa en tu navegador: nada sale de tu computador.</p>
+      <section><h2>Nivel de exigencia</h2>
+        <label><input type="radio" checked> Estricto (recomendado para empezar): filtra más humo, y a veces apaga un post que sí valía</label>
+        <label><input type="radio"> Equilibrado: filtra solo lo más evidente</label>
+        <label><input type="radio"> Suave: casi nada pasa por humo, salvo los casos de manual</label></section>
       <section><h2>Qué hacer con un post filtrado</h2>
         <label><input type="radio" checked> Atenuar (apagado y colapsado, con botón "Ver igual")</label>
         <label><input type="radio"> Ocultar (solo queda una barra)</label>
         <label><input type="radio"> Solo etiquetar</label></section>
-      <section><h2>Filtros</h2><p class="hint">Sensibilidad: un número más bajo filtra más.</p>${rows}</section>
+      <section><h2>Filtros</h2><p class="hint">Umbral de cada filtro: un número más bajo filtra más. Vacío = el que corresponde al nivel elegido.</p>${rows}</section>
     </main></div></body></html>`;
 }
 

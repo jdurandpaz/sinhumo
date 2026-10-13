@@ -82,5 +82,23 @@
     "pattern": "\\b(you never pay again|virtually (0|zero|no) cost|for free,? forever)",
     "weight": 1,
     "description": "Hype: \"you never pay again\""
+  },
+  {
+    "id": "piloto.en.percent-use",
+    "pattern": "\\byou'?re (only )?(using|tapping into) (just |only )?\\d+ ?%",
+    "weight": 2.5,
+    "description": "Template hook: \"you're only using 23%\""
+  },
+  {
+    "id": "piloto.en.dont-sell-x",
+    "pattern": "\\bi don'?t (sell|give|deliver) [^.\\n]{2,40}\\.\\s*i (sell|give|deliver) ",
+    "weight": 1.5,
+    "description": "Template contrast: \"I don't sell X. I sell Y\""
+  },
+  {
+    "id": "piloto.en.if-you-dm",
+    "pattern": "\\bif you (sell|are|want|run|need)[^.\\n]{3,90}(dm me|message me|comment)",
+    "weight": 2,
+    "description": "Funnel close: \"if you sell B2B..., DM me\""
   }
 ]

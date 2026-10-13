@@ -5,5 +5,10 @@
   "threshold": 4,
   "defaultEnabled": true,
   "reducedByAporta": true,
-  "signals": { "shortLines": 2, "emojiBullets": 1, "hashtags": 1 }
+  "signals": {
+    "shortLines": 2,
+    "emojiBullets": 1,
+    "hashtags": 1,
+    "shoutedOpener": 1.5
+  }
 }

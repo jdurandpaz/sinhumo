@@ -11,6 +11,14 @@
     <p class="lead">Elige qué filtrar de tu feed de LinkedIn. Todo se evalúa en tu navegador: nada sale de tu computador.</p>
 
     <section>
+      <h2>Nivel de exigencia</h2>
+      <label><input type="radio" name="level" value="estricto"> Estricto (recomendado para empezar): filtra más humo, y a veces apaga un post que sí valía</label>
+      <label><input type="radio" name="level" value="equilibrado"> Equilibrado: filtra solo lo más evidente</label>
+      <label><input type="radio" name="level" value="suave"> Suave: casi nada pasa por humo, salvo los casos de manual</label>
+      <p class="hint">¿Te apaga posts que sí aportan? Baja a Equilibrado o Suave, o márcalos con "No es humo" para que no se vuelvan a filtrar y nos ayudes a ajustar la regla. El nivel no cambia los filtros de temas (como Política) ni los anuncios.</p>
+    </section>
+
+    <section>
       <h2>Qué hacer con un post filtrado</h2>
       <label><input type="radio" name="mode" value="atenuar"> Atenuar (apagado y colapsado, con botón "Ver igual")</label>
       <label><input type="radio" name="mode" value="ocultar"> Ocultar (solo queda una barra)</label>
@@ -19,7 +27,7 @@
 
     <section>
       <h2>Filtros</h2>
-      <p class="hint">Sensibilidad: un número más bajo filtra más.</p>
+      <p class="hint">Umbral de cada filtro: un número más bajo filtra más. Vacío = el que corresponde al nivel elegido.</p>
       <div id="filters"></div>
     </section>
 

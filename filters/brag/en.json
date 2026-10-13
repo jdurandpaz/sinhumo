@@ -40,5 +40,23 @@
     "pattern": "\\b((i was|i'?ve been) (recognized|named|selected|awarded)|top voice|won the .{2,30} award)",
     "weight": 1.5,
     "description": "Award or recognition"
+  },
+  {
+    "id": "brag.en.proud-to-be",
+    "pattern": "\\bi'?m (so |very |incredibly |deeply )?(proud|honored|humbled) to (be|have|join)",
+    "weight": 2,
+    "description": "\"I'm so proud to be...\""
+  },
+  {
+    "id": "brag.en.nominated",
+    "pattern": "\\b(i was|i'?ve been|i got) nominated",
+    "weight": 1.5,
+    "description": "Own nominations"
+  },
+  {
+    "id": "brag.en.opportunity",
+    "pattern": "\\bi (had|was given) the (incredible|amazing|great) opportunity to",
+    "weight": 1,
+    "description": "\"I had the incredible opportunity to...\""
   }
 ]

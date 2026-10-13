@@ -118,5 +118,23 @@
     "pattern": "\\b(esto es lo que nos hace (ser )?humanos|somos humanos,? (y )?no (maquinas|robots|ia))",
     "weight": 1.5,
     "description": "Moraleja: \"esto es lo que nos hace humanos\""
+  },
+  {
+    "id": "humo.es.no-te-rindas",
+    "pattern": "\\b(no (te rindas|dejes de intentarlo|tires la toalla|abandones tus suenos)|nunca te rindas|sigue intentandolo)",
+    "weight": 1.5,
+    "description": "Arenga motivacional: \"no te rindas\", \"no dejes de intentarlo\""
+  },
+  {
+    "id": "humo.es.recordatorio",
+    "pattern": "(\\(?leelo si (tienes|estas|sientes|necesitas)|^(un|este es un) recordatorio para (todos|todas|quienes|los que|las que))",
+    "weight": 1.5,
+    "description": "Apertura de recordatorio inspiracional: \"léelo si tienes ganas de...\""
+  },
+  {
+    "id": "humo.es.nunca-pense",
+    "pattern": "^nunca (pense|imagine|crei) que (iba a|estaria|llegaria|escribiria)",
+    "weight": 1.5,
+    "description": "Apertura de manual: \"Nunca pensé que iba a escribir este post\""
   }
 ]

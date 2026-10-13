@@ -8,6 +8,9 @@
   let engine = null;
   let settings = null;
   let allowed = new Set();
+  // Para el contador del ícono: así se ve que la extensión trabaja aunque no
+  // filtre nada.
+  const stats = { revisados: 0, filtrados: 0 };
 
   function reasons(result) {
     return result.hits.map((h) => h.name).join(' · ');
@@ -106,11 +109,17 @@
     post.prepend(bar);
   }
 
+  function report() {
+    chrome.runtime.sendMessage({ type: 'sinhumo:stats', ...stats }).catch(() => {});
+  }
+
   function scan(scope) {
+    const before = stats.revisados;
     for (const post of SinHumoDom.findPosts(scope)) {
       if (post.hasAttribute(DONE)) continue;
       if (allowed.has(SinHumoDom.postKey(post))) {
         post.setAttribute(DONE, 'permitido');
+        stats.revisados++;
         continue;
       }
       const promoted = SinHumoDom.isPromoted(post);
@@ -119,7 +128,10 @@
       const result = engine.classify(text, settings.enabled, { promoted });
       if (result.hit) decorate(post, result);
       else post.setAttribute(DONE, 'ok');
+      stats.revisados++;
+      if (result.hit) stats.filtrados++;
     }
+    if (stats.revisados !== before) report();
   }
 
   chrome.runtime.sendMessage({ type: 'sinhumo:config' }, async (response) => {

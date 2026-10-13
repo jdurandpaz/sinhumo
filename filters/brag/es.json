@@ -40,5 +40,23 @@
     "pattern": "\\b((fui|he sido) (reconocid[oa]|nombrad[oa]|seleccionad[oa]|premiad[oa])|top voice|recibi el premio)",
     "weight": 1.5,
     "description": "Premio o reconocimiento"
+  },
+  {
+    "id": "brag.es.me-siento-orgulloso",
+    "pattern": "\\bme siento (muy |tan |super )?(orgullos[oa]|honrad[oa]|privilegiad[oa]) de",
+    "weight": 2,
+    "description": "\"Me siento muy orgullosa de...\""
+  },
+  {
+    "id": "brag.es.nominacion",
+    "pattern": "\\b(me nominaron|fui nominad[oa]|mi nominacion)",
+    "weight": 1.5,
+    "description": "Nominaciones propias"
+  },
+  {
+    "id": "brag.es.valiosa-oportunidad",
+    "pattern": "\\b(tuvimos|tuve) (la )?(valiosa|gran|enorme|increible) oportunidad de",
+    "weight": 1,
+    "description": "\"Tuvimos la valiosa oportunidad de...\""
   }
 ]

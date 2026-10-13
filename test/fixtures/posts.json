@@ -204,5 +204,44 @@
     "name": "cita de varias palabras para criticar el cebo",
     "expect": [],
     "text": "Cada semana veo posts que dicen \"comenta SÍ y te lo envío\". Prefiero compartir el enlace directo: si sirve, sirve igual sin pedir nada a cambio."
+  },
+  {
+    "name": "recordatorio motivacional con pedido de etiquetar",
+    "expect": [],
+    "expectStrict": [
+      "humo",
+      "cebo"
+    ],
+    "text": "Un recordatorio para todos los que están emprendiendo:\n(léelo si tienes ganas de tirar la toalla)\nEl mes pasado casi cierro.\nHoy sigo acá.\nNo te rindas.\nPD: Etiqueta abajo a alguien que te empuja a seguir."
+  },
+  {
+    "name": "gancho de porcentaje de uso",
+    "expect": [],
+    "expectStrict": [
+      "piloto"
+    ],
+    "text": "Si pagas una herramienta de IA y solo la usas para escribir correos, estás usando el 20% de su capacidad.\n\nTe dejo 5 usos que casi nadie aprovecha."
+  },
+  {
+    "name": "embudo de ventas con contraste de plantilla",
+    "expect": [],
+    "expectStrict": [
+      "piloto"
+    ],
+    "text": "A mis clientes no les entrego más seguidores. Les entrego reuniones con quien sí puede comprarles.\n\nSi vendes al B2B y quieres más citas, escríbeme por mensaje directo."
+  },
+  {
+    "name": "titular gritado de página viral",
+    "expect": [],
+    "expectStrict": [
+      "humo"
+    ],
+    "text": "🚨 ¡ESTE HOMBRE ES UN GENIO!\n🤯 Empezó vendiendo en la calle y hoy factura millones.\n💡 Su secreto fue simple.\n🔥 Nunca dejó de aprender."
+  },
+  {
+    "name": "post con datos que cierra con ánimo",
+    "expect": [],
+    "expectStrict": [],
+    "text": "Cerramos la ronda después de 14 meses y 63 reuniones con fondos. El 80% de los no llegó en la primera reunión, casi siempre por tamaño de mercado. Ajustamos el deck con esos datos y la tasa de segundas reuniones subió del 12% al 31%.\n\nSi estás levantando capital: no te rindas, pero mide."
   }
 ]

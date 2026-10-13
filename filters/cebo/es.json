@@ -1,8 +1,62 @@
 [
-  { "id": "cebo.es.comenta-y-envio", "pattern": "\\bcomenta \\S+ y te (lo |la )?(envio|mando|paso|comparto)", "weight": 3, "description": "\"Comenta X y te lo envío\"" },
-  { "id": "cebo.es.like-si", "pattern": "\\b(dale like|reacciona|pon un like) si", "weight": 2, "description": "\"Dale like si...\"" },
-  { "id": "cebo.es.comparte", "pattern": "\\b(repostea|comparte)( esto)? (si|para que)", "weight": 1.5, "description": "\"Comparte para que...\"" },
-  { "id": "cebo.es.sigueme", "pattern": "\\b(sigueme|seguime) para (mas|no perderte)", "weight": 1.5, "description": "\"Sígueme para más\"" },
-  { "id": "cebo.es.guarda", "pattern": "\\bguarda (este post|esto) para (despues|luego|cuando)", "weight": 1.5, "description": "\"Guarda este post\"" },
-  { "id": "cebo.es.adivina", "pattern": "\\b(adivina|adivinen) (que|cual)", "weight": 1, "description": "Adivinanza de cebo" }
+  {
+    "id": "cebo.es.comenta-y-envio",
+    "pattern": "\\bcomenta \\S+ y te (lo |la )?(envio|mando|paso|comparto)",
+    "weight": 3,
+    "description": "\"Comenta X y te lo envío\""
+  },
+  {
+    "id": "cebo.es.like-si",
+    "pattern": "\\b(dale like|reacciona|pon un like) si",
+    "weight": 2,
+    "description": "\"Dale like si...\""
+  },
+  {
+    "id": "cebo.es.comparte",
+    "pattern": "\\b(repostea|comparte)( esto)? (si|para que)",
+    "weight": 1.5,
+    "description": "\"Comparte para que...\""
+  },
+  {
+    "id": "cebo.es.sigueme",
+    "pattern": "\\b(sigueme|seguime) para (mas|no perderte)",
+    "weight": 1.5,
+    "description": "\"Sígueme para más\""
+  },
+  {
+    "id": "cebo.es.guarda",
+    "pattern": "\\bguarda (este post|esto) para (despues|luego|cuando)",
+    "weight": 1.5,
+    "description": "\"Guarda este post\""
+  },
+  {
+    "id": "cebo.es.adivina",
+    "pattern": "\\b(adivina|adivinen) (que|cual)",
+    "weight": 1,
+    "description": "Adivinanza de cebo"
+  },
+  {
+    "id": "cebo.es.etiqueta",
+    "pattern": "\\betiqueta (abajo |aqui |en (los )?comentarios )?a (alguien|un amigo|una amiga|una persona|quien)",
+    "weight": 2,
+    "description": "Pide etiquetar a alguien para mover el post"
+  },
+  {
+    "id": "cebo.es.escribeme",
+    "pattern": "\\b(escribeme|enviame un mensaje|mandame un (mensaje|dm|inbox)) (por|al) (mensaje )?(directo|privado|interno|dm|inbox)",
+    "weight": 1.5,
+    "description": "Cierre de embudo: \"escríbeme por mensaje directo\""
+  },
+  {
+    "id": "cebo.es.vota",
+    "pattern": "\\b(pueden |puedes )?vot(a|en|ar)(los|me|nos|las)? aqui\\b",
+    "weight": 1.5,
+    "description": "Pide votos: \"pueden votarlos aquí\""
+  },
+  {
+    "id": "cebo.es.campanita",
+    "pattern": "(\\+ ?seguir \\+ ?🔔|activa (la )?campanita)",
+    "weight": 1.5,
+    "description": "Firma con \"+ Seguir + 🔔\""
+  }
 ]

@@ -49,6 +49,13 @@
       const first = text.split('\n')[0] || '';
       return (first.match(/[🚨⚠❌‼🛑🔥⛔]/gu) || []).length >= 3;
     },
+    // Titular gritado: la primera línea casi entera en mayúsculas y con "!".
+    shoutedOpener(text) {
+      const first = (text.split('\n').find((l) => l.trim()) || '').trim();
+      const letters = first.match(/\p{L}/gu) || [];
+      if (letters.length < 10 || !first.includes('!')) return false;
+      return letters.filter((c) => c === c.toUpperCase() && c !== c.toLowerCase()).length / letters.length >= 0.8;
+    },
     // Exceso de hashtags.
     hashtags(text) {
       return (text.match(/(^|\s)#[\p{L}\d_]+/gu) || []).length >= 5;
